@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="body">
-    
+
         <a href="#top">
             <div class="scroll-top">
                 <i class="fa-solid fa-angles-up"></i>
@@ -35,7 +35,7 @@
         <div class="menu">
             <ul class="Fixedmenu">
                 <h2>CSS</h2>
-                <li><a class="links" href="#p1">HTML Կառուցվածք</a></li>
+                <li><a class="links" href="#p1">CSS Կառուցվածք</a></li>
                 <li><a class="links" href="#p2">HTML Հիմնական</a></li>
                 <li><a class="links" href="#p3">HTML Ատրիբուտներ</a></li>
                 <li><a class="links" href="#p4">HTML Վերնագրեր</a></li>
@@ -53,112 +53,64 @@
         <div class="lesson">
             <section id="p1">
                     <div class="title">
-                        <h1>HTML-ի Կառուցվածքը</h1>
+                        <h1>CSS-ի Կառուցվածքը</h1>
                     </div>
-                    <div class="content-c1">
                         <div class="hr">
                             <hr>
-                            <p>HTML-ը վեբ էջեր ստեղծելու ստանդարտ կմախքային լեզու է:</p>
+                            <p>CSS-ն այն լեզուն է, որը մենք օգտագործում ենք վեբ էջի ոճավորման համար:</p>
                             <hr>
                         </div>
                         <div class="what-html">
-                            <h2>Ի՞նչ է HTML-ը</h2>
+                            <h2>Ի՞նչ է CSS-ը</h2>
                             <ul>
-                                <li>HTML-ը նշանակում է Hyper Text Markup Language</li>
-                                <li>HTML-ը վեբ էջեր ստեղծելու ստանդարտ նշագրման լեզու է</li>
-                                <li>HTML-ը նկարագրում է վեբ էջի կառուցվածքը</li>
-                                <li>HTML-ը բաղկացած է մի շարք տարրերից</li>
-                                <li>HTML տարրերը պիտակավորում են բովանդակության այնպիսի հատվածներ,<br> ինչպիսիք են «սա վերնագիր է», «սա պարբերություն է», «սա հղում է» և այլն:</li>
+                                <li>CSS-ը նշանակում է Cascading Style Sheets</li>
+                                <li>CSS-ը նկարագրում է, թե ինչպես պետք է HTML տարրերը ցուցադրվեն էկրանին</li>
+                                <li>CSS-ը խնայում է շատ աշխատանք: Այն կարող է միանգամից վերահսկել բազմաթիվ վեբ էջերի դասավորությունը</li>
+                                <li>Արտաքին ոճաթերթերը պահվում են CSS ֆայլերում</li>
                             </ul>
                         </div>
                         <br>
-                        <hr >
-                        <div class="html-doc">
-                            <h2>Պարզ HTML փաստաթուղթ</h2>
-                            <div class="html-back">
-                                <h3>ՕՐԻՆԱԿ</h3>
-                                <div class="code-doc">
-                                    <p>
-                                        <span><</span>!DOCTYPE <a style="color: red;">html</a><span>></span><br>
-                                        <span><</span>html<span>></span><br>
-                                        <span><</span>head<span>></span><br>
-                                        <span><</span>title<span>></span><a style="color: #000;">Page Title</a><span><</span>/title<span>></span><br>
-                                        <span><</span>/head<span>></span><br>
-                                        <span><</span>body<span>></span><br>
-                                        <br>
-                                        <span><</span>h1<span>></span><a style="color: #000;">My First Heading</a><span><</span>/h1<span>></span><br>
-                                        <span><</span>p<span>></span><a style="color: #000;">My first paragraph.</a><span><</span>/p<span>></span><br>
-                                        <br>
-                                        <span><</span>/body<span>></span><br>
-                                        <span><</span>/html<span>></span><br>
-                                    </p>
-                                </div>
-                                <a href="../HTML/codetutu/ex1.html" target="_blank">
-                                    <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
-                                </a> 
+                        <hr>
+                        <h2>Ինչու՞ օգտագործել CSS:</h2>
+                        <p>CSS-ն օգտագործվում է ձեր վեբ էջերի ոճերը սահմանելու համար, ներառյալ դիզայնը, դասավորությունը և տարբեր սարքերի և էկրանի չափերի ցուցադրման տատանումները:</p>
+                        <div class="html-back">
+                            <h3>ՕՐԻՆԱԿ</h3>
+                            <div class="code-doc">
+                                <p>
+                                    <span>body</span> {<br><f>background-color</f>: <a>lightblue</a>;<br>}
+                                    <br><br>
+                                    <span>h1</span> {<br><f>color</f>: <a>white</a>;<br>
+                                    <f>text-align</f>: <a>center</a>;<br>}
+                                    <br><br>
+                                    <span>p</span> {<br><f>font-family</f>: <a>verdana</a>;<br>
+                                    <f>font-size</f>: <a>20px</a>;<br>}
+                                </p>
                             </div>
-                            <div class="html-end">
-                                <h2>Բացատրված օրինակը</h2>
-                                <ul>
-                                    <li><a ><span><</span>!DOCTYPE html<span>></span></a> հռչակագիրը սահմանում է, որ այս փաստաթուղթը HTML5 փաստաթուղթ է</li>
-                                    <li><a ><span><</span>html<span>></span></a> տարրը HTML էջի արմատային տարրն է</li>
-                                    <li><a ><span><</span>head<span>></span></a> տարրը պարունակում է մետա տեղեկատվություն HTML էջի մասին</li>
-                                    <li><a ><span><</span>title<span>></span></a> տարրը նշում է վերնագիր HTML էջի համար (որը ցուցադրվում է դիտարկիչի <br>վերնագրի տողում կամ էջի ներդիրում)</li>
-                                    <li><a ><span><</span>body<span>></span></a> տարրը սահմանում է փաստաթղթի մարմինը և հանդիսանում է բոլոր տեսանելի <br>
-                                        բովանդակության կոնտեյներ, ինչպիսիք են վերնագրերը, պարբերությունները, պատկերները,<br> հիպերհղումները, աղյուսակները, ցուցակները և այլն:</li>
-                                    <li><a ><span><</span>h1<span>></span></a> տարրը սահմանում է մեծ վերնագիր</li>
-                                    <li><a ><span><</span>p<span>></span></a> տարրը սահմանում է պարբերություն</li>
-                                </ul>
-                            </div>
+                            <a href="#link" target="_blank">
+                                <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                            </a> 
                         </div>
-                        <br>
-                        <hr >
-    
-                        <div class="html-el">
-                            <h2>Ի՞նչ է HTML տարրը:</h2>
-                            <div class="html-top">
-                                <p>HTML տարրը սահմանվում է սկզբնական մեկ հատանի չակերտով, որոշ բովանդակությամբ և ավարտի մեկ հատանի չակերտով.</p>
-                                <br>
-                                <p><span><</span><a style="color: red;">tagname</a><span>></span>Բովանդակություն<span><</span><a style="color: red;">/tagname</a><span>></span></p>
-                                <br>
-                                <p>HTML տարրը ամեն ինչ է՝ սկզբի թեգից մինչև վերջ:</p>
-                                <br>
-                                <p><span><</span><a style="color: red;">h1</a><span>></span><a>Վենագիր</a><span><</span><a style="color: red;">/h1</a><span>></span></p>
-                                <br>
-                                <p><span><</span><a style="color: red;">p</a><span>></span><a>Պարագրաֆ</a><span><</span><a style="color: red;">/p</a><span>></span></p>
-                            </div>
-                            <div class="html-tab">
-                                <table>
-                                    <tr>
-                                      <th style="border-left: 1px solid #dddddd;">Թեգի սկզբը</th>
-                                      <th>Տարրի բովանդակությունը</th>
-                                      <th style="border-right: 1px solid #dddddd;">Թեգի վերջը</th>
-                                    </tr>
-                                    <tr>
-                                      <td style="border-left: 1px solid #dddddd;"><span><</span><a>h1</a><span>></span></td>
-                                      <td>Վենագիր</td>
-                                      <td style="border-right: 1px solid #dddddd;"><span><</span><a>/h1</a><span>></span></td>
-                                    </tr>
-                                    <tr>
-                                      <td style="border-left: 1px solid #dddddd;"><span><</span><a>p</a><span>></span></td>
-                                      <td>Պարագրաֆ</td>
-                                      <td style="border-right: 1px solid #dddddd;"><span><</span><a>/p</a><span>></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="border-left: 1px solid #dddddd;"><span><</span><a>br</a><span>></span></td>
-                                        <td>չունի</td>
-                                        <td style="border-right: 1px solid #dddddd;">չունի</td>
-                                      </tr>
-                                  </table>
-                            </div>
-                            <div class="note">
-                                <p><b>Նշում:</b> որոշ HTML տարրեր չունեն բովանդակություն (ինչպես <span><</span>br<span>></span> տարրը): Այս տարրերը կոչվում են դատարկ տարրեր: Դատարկ տարրերը վերջի թեգ չունեն:</p>
-                            </div>
+                        <hr>
+                        <h2>CSS լուծել է մեծ խնդիր</h2>
+                        <p>HTML-ը ԵՐԲԵՔ նախատեսված չի եղել թեգեր ֆորմատագրելու համար:</p>
+                        <p>HTML-ը ստեղծվել է վեբ էջի բովանդակությունը նկարագրելու համար, օրինակ՝</p>
+                        <p><span><</span>h1<span>></span>Վերնագիր<span><</span>/h1<span>></span></p>
+                        <p><span><</span>p<span>></span>Պարագրաֆ<span><</span>/p<span>></span></p>
+                        <p style="line-height: 23px;">Երբ HTML 3.2-ի սպեցիֆիկացիաներին ավելացվեցին <span><</span>font> պիտակները և գունային ատրիբուտները, դա մղձավանջ դարձավ վեբ մշակողների համար:
+                            Խոշոր կայքերի ստեղծումը, որտեղ տառատեսակներ և գունային տեղեկատվություն ավելացվում էին յուրաքանչյուր էջին, դարձավ երկար և թանկ գործընթաց:</p>
+                        <p>Այս խնդիրը լուծելու համար Համաշխարհային ցանցի կոնսորցիումը (W3C) ստեղծեց CSS:</p>
+                        <p>CSS-ը հեռացրեց ոճի ձևաչափումը HTML էջից:</p>
+                        <div class="note">
+                            <p>Եթե չգիտեք, թե ինչ է HTML-ը, առաջարկում ենք կարդալ մեր <a href="https://gormkrtchyann.github.io/HTMLLesson/" target="_blank">HTML ձեռնարկը</a>:</p>
                         </div>
-                    </div>
+                        <hr>
+                        <h2>CSS-ը խնայում է շատ աշխատանք:</h2>
+                        <p>Ոճի սահմանումները սովորաբար պահվում են արտաքին .css ֆայլերում:</p>
+                        <p>Արտաքին ոճաթերթի ֆայլի միջոցով դուք կարող եք փոխել ամբողջ կայքի տեսքը:</p>
             </section>
         </div>
     </div>
+</div>
 
     <!------------------Script------------------>
     <script src="https://kit.fontawesome.com/8072840f8d.js" crossorigin="anonymous"></script>

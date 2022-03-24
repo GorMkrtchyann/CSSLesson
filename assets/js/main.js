@@ -1,14 +1,14 @@
-// let li=document.querySelectorAll(".links");
-// let sec=document.querySelectorAll("section");
+let li=document.querySelectorAll(".links");
+let sec=document.querySelectorAll("section");
 
-// function activeMenu(){
-//     let len=sec.length;
-//     while(--len && window.scrollY + 97 < sec[len].offsetTop){}
-//     li.forEach(ltx => ltx.classList.remove("active"));
-//     li[len].classList.add("active");
-// }
-// activeMenu();
-// window.addEventListener("scroll", activeMenu);
+function activeMenu(){
+    let len=sec.length;
+    while(--len && window.scrollY + 97 < sec[len].offsetTop){}
+    li.forEach(ltx => ltx.classList.remove("active"));
+    li[len].classList.add("active");
+}
+activeMenu();
+window.addEventListener("scroll", activeMenu);
 
 let menuStiky = document.querySelector('.Fixedmenu');
 let menu = document.querySelector('.menu')

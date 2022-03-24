@@ -253,13 +253,22 @@ body {
 }
 
 .content .html-back .code-doc p {
-  color: brown;
+  color: #555;
   padding: 10px;
   line-height: 23px;
 }
 
+.content .html-back .code-doc p f {
+  color: #9538ff;
+  margin-left: 20px;
+}
+
+.content .html-back .code-doc p a {
+  color: green;
+}
+
 .content .html-back .code-doc span {
-  color: blue;
+  color: darkblue;
 }
 
 .content .html-back button {
@@ -313,11 +322,15 @@ body {
 
 .content .note {
   background-color: khaki;
-  width: 800px;
+  width: 100%;
   color: black;
   padding: 10px 10px 3px 10px;
   margin-top: 50px;
   margin-left: -25px;
+}
+
+.content .note a {
+  color: #000;
 }
 
 .content .html-web h2 {
