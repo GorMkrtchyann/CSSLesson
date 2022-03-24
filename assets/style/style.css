@@ -354,8 +354,9 @@ body {
   margin-top: 15px;
 }
 
-.content table tr {
+.content table th, .content table td {
   height: 40px;
+  padding: 0 10px;
 }
 
 .mobile-menu {

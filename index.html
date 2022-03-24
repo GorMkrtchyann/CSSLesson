@@ -37,7 +37,7 @@
                 <h2>CSS</h2>
                 <li><a class="links" href="#p1">CSS Կառուցվածք</a></li>
                 <li><a class="links" href="#p2">CSS Շարահյուսություն</a></li>
-                <li><a class="links" href="#p3">HTML Ատրիբուտներ</a></li>
+                <li><a class="links" href="#p3">CSS Ընտրիչներ</a></li>
                 <li><a class="links" href="#p4">HTML Վերնագրեր</a></li>
                 <li><a class="links" href="#p5">HTML Պարագրաֆ</a></li>
                 <li><a class="links" href="#p6">HTML Ստայլեր</a></li>
@@ -143,6 +143,197 @@
                         <li><a>text-align</a>-ը հատկություն է, իսկ <a>center</a> արժեքն է</li>
                     </ul>
                 </div>
+            </section>
+            <br>
+            <hr>
+            <br>
+            <section id="p3">
+                <h1>CSS Ընտրիչներ</h1>
+                <hr>
+                <p>CSS ընտրիչը ընտրում է HTML տարր(եր)ը, որը ցանկանում եք ոճավորել:</p>
+                <hr>
+                <h2>CSS Ընտրիչներ</h2>
+                <p>CSS ընտրիչները օգտագործվում են «գտնելու» (կամ ընտրելու) HTML տարրերը, որոնք ցանկանում եք ոճավորել:</p>
+                <p>Մենք կարող ենք CSS ընտրիչները բաժանել հինգ կատեգորիաների</p>
+                <ul>
+                    <li>Պարզ ընտրիչներ (ընտրեք տարրեր՝ հիմնվելով անվան, ID-ի, class-ի վրա)</li>
+                    <li><a href="" style="color: black;">Կոմբինատորի ընտրիչներ</a> (ընտրեք տարրեր՝ հիմնվելով նրանց միջև որոշակի հարաբերությունների վրա)</li>
+                    <li><a href="" style="color: black;">Կեղծ դասի ընտրիչներ</a> (ընտրեք տարրեր որոշակի վիճակի հիման վրա)</li>
+                    <li><a href="" style="color: black;">Կեղծ տարրերի ընտրիչներ</a> (ընտրել և ոճավորել տարրի մի մասը)</li>
+                    <li><a href="" style="color: black;">Հատկանիշների ընտրիչներ</a> (ընտրեք տարրեր՝ հիմնված հատկանիշի կամ հատկանիշի արժեքի վրա)</li>
+                </ul>
+                <p>Այս էջը կբացատրի CSS-ի ամենահիմնական ընտրիչները:</p>
+                <hr>
+                <h2>CSS Տարրի Ընտրիչ</h2>
+                <p>Տարրերի ընտրիչը ընտրում է HTML տարրեր՝ հիմնվելով տարրի անվան վրա:</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <p>Այս օրինակում բոլոր <span><</span>p> տարրերը կհավասարեցվեն կենտրոնական մասում՝ տեքստի կարմիր գույնով.</p>
+                    <div class="code-doc">
+                        <p>
+                            <span>p</span> {<br><f>text-align</f>: <a>center</a>;<br>
+                            <f>color</f>: <a>red</a>;<br>}
+                        </p>
+                    </div>
+                    <a href="#link" target="_blank">
+                        <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                    </a> 
+                </div>
+                <hr>
+                <h2>CSS id Ընտրիչ</h2>
+                <p>id ընտրիչն օգտագործում է HTML տարրի id հատկանիշը՝ կոնկրետ տարր ընտրելու համար:</p>
+                <p>Տարրի id-ն եզակի է էջի ներսում, ուստի id ընտրիչն օգտագործվում է մեկ եզակի տարր ընտրելու համար:</p>
+                <p>Հատուկ id-ով տարր ընտրելու համար գրեք հեշթեգ (#) նիշ, որին հաջորդում է տարրի id-ը:</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <p>Ստորև բերված CSS կանոնը կկիրառվի HTML տարրի վրա՝ id="para1"-ով:</p>
+                    <div class="code-doc">
+                        <p>
+                            <span>#para1</span> {<br><f>text-align</f>: <a>center</a>;<br>
+                            <f>color</f>: <a>red</a>;<br>}
+                        </p>
+                    </div>
+                    <a href="#link" target="_blank">
+                        <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                    </a> 
+                </div>
+                <div class="note">
+                    <p><b>Նշում:</b> ID անունը չի կարող սկսվել թվով:</p>
+                </div>
+                <hr>
+                <h2>CSS class Ընտրիչ</h2>
+                <p>Class ընտրիչը ընտրում է HTML տարրեր՝ հատուկ դասի հատկանիշով:</p>
+                <p>Հատուկ class տարրեր ընտրելու համար գրեք կետ (.) նիշ, որին հաջորդում է դասի անվանումը:</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <p>Այս օրինակում class="center" բոլոր HTML տարրերը կարմիր և կենտրոնացված կլինեն</p>
+                    <div class="code-doc">
+                        <p>
+                            <span>.center</span> {<br><f>text-align</f>: <a>center</a>;<br>
+                            <f>color</f>: <a>red</a>;<br>}
+                        </p>
+                    </div>
+                    <a href="#link" target="_blank">
+                        <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                    </a> 
+                </div>
+                <p>Կարող եք նաև նշել, որ դասի վրա պետք է ազդի միայն կոնկրետ HTML տարրերը:</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <p>Այս օրինակում միայն <span><</span>p> տարրերը՝ class="center"-ով կարմիր և կենտրոնացված կլինեն:</p>
+                    <div class="code-doc">
+                        <p>
+                            <span>p.center</span> {<br><f>text-align</f>: <a>center</a>;<br>
+                            <f>color</f>: <a>red</a>;<br>}
+                        </p>
+                    </div>
+                    <a href="#link" target="_blank">
+                        <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                    </a> 
+                </div>
+                <p>HTML տարրերը կարող են նաև վերաբերել մեկից ավելի class-ների:</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <p>Այս օրինակում <span><</span>p> տարրը ոճավորվելու է ըստ class="center" և class="large":</p>
+                    <div class="code-doc">
+                        <p>
+                            <span><</span>p<span> <a style="color: red;">class<a style="color: green;">="center large"</a> </a>></span><a style="color: #000;">Պարագրաֆ</a><span><</span>/p<span>></span><br>
+                        </p>
+                    </div>
+                    <a href="#link" target="_blank">
+                        <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                    </a> 
+                </div>
+                <div class="note">
+                    <p><b>Նշում:</b> Class անունը չի կարող սկսվել թվով:</p>
+                </div>
+                <hr>
+                <h2>CSS ՈՒնիվերսալ Ընտրիչ</h2>
+                <p>Ունիվերսալ ընտրիչը (*) ընտրում է էջի բոլոր HTML տարրերը:</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <p>Ստորև բերված CSS կանոնը կազդի էջի յուրաքանչյուր HTML տարրի վրա.</p>
+                    <div class="code-doc">
+                        <p>
+                            <span>*</span> {<br><f>text-align</f>: <a>center</a>;<br>
+                            <f>color</f>: <a>blue</a>;<br>}
+                        </p>
+                    </div>
+                    <a href="#link" target="_blank">
+                        <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                    </a> 
+                </div>
+                <hr>
+                <h2>CSS Խմբավորման Ընտրիչ</h2>
+                <p>Խմբավորման ընտրիչը ընտրում է բոլոր HTML տարրերը նույն ոճի սահմանումներով:</p>
+                <p>Նայեք հետևյալ CSS կոդը (h1, h2 և p տարրերը ունեն նույն ոճի սահմանումները).</p>
+                <div class="html-back">
+                    <div class="code-doc">
+                        <p>
+                            <span>h1</span> {<br><f>color</f>: <a>red</a>;<br>
+                                <f>text-align</f>: <a>center</a>;<br>}
+                            <br><br>
+                            <span>h2</span> {<br><f>color</f>: <a>red</a>;<br>
+                            <f>text-align</f>: <a>center</a>;<br>}
+                            <br><br>
+                            <span>p</span> {<br><f>color</f>: <a>red</a>;<br>
+                                <f>text-align</f>: <a>center</a>;<br>}
+                        </p>
+                    </div>
+                </div>
+                <p>Ավելի լավ կլինի սելեկտորները խմբավորել, կոդը նվազագույնի հասցնել։</p>
+                <p>Ընտրիչներ խմբավորելու համար յուրաքանչյուր ընտրիչ առանձնացրեք ստորակետով:</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>h1, h2, p</span> {<br><f>color</f>: <a>red</a>;<br>
+                                <f>text-align</f>: <a>center</a>;<br>}
+                        </p>
+                    </div>
+                    <a href="#link" target="_blank">
+                        <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                    </a> 
+                </div>
+                <hr>
+                <h2>Բոլոր CSS Պարզ Ընտրիչները</h2>
+                <table style="border: 1px solid rgba(0, 0, 0, 0.438); text-align: left;">
+                    <tr>
+                        <th>Ընտրիչ</th>
+                        <th>Օրինակ</th>
+                        <th>Օրինակի Նկարագրություն</th>
+                    </tr>
+                    <tr style="background-color: #dddddd;">
+                        <td>#id</td>
+                        <td>#firstname</td>
+                        <td>Ընտրում է id="firstname" տարրը</td>
+                    </tr>
+                    <tr>
+                        <td>.class</td>
+                        <td>.intro</td>
+                        <td>Ընտրում է բոլոր տարրերը class="intro"-ով</td>
+                    </tr>
+                    <tr style="background-color: #dddddd;">
+                        <td>տարր.class</td>
+                        <td>p.intro</td>
+                        <td>Ընտրում է միայն <span><</span>p> տարրեր class="intro"-ով</td>
+                    </tr>
+                    <tr>
+                        <td>*</td>
+                        <td>*</td>
+                        <td>Ընտրում է բոլոր տարրերը</td>
+                    </tr>
+                    <tr style="background-color: #dddddd;">
+                        <td>տարր</td>
+                        <td>p</td>
+                        <td>Ընտրում է բոլոր <span><</span>p> տարրերը</td>
+                    </tr>
+                    <tr>
+                        <td>տարր, տարր,..</td>
+                        <td>div, p</td>
+                        <td>Ընտրում է բոլոր <span><</span>div> տարրերը և բոլոր <span><</span>p> տարրերը</td>
+                    </tr>
+                </table>
             </section>
         </div>
     </div>
