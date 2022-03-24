@@ -38,7 +38,7 @@
                 <li><a class="links" href="#p1">CSS Կառուցվածք</a></li>
                 <li><a class="links" href="#p2">CSS Շարահյուսություն</a></li>
                 <li><a class="links" href="#p3">CSS Ընտրիչներ</a></li>
-                <li><a class="links" href="#p4">HTML Վերնագրեր</a></li>
+                <li><a class="links" href="#p4">CSS Backgrounds (ֆոն)</a></li>
                 <li><a class="links" href="#p5">HTML Պարագրաֆ</a></li>
                 <li><a class="links" href="#p6">HTML Ստայլեր</a></li>
                 <li><a class="links" href="#p7">HTML Հղումներ</a></li>
@@ -334,6 +334,305 @@
                         <td>Ընտրում է բոլոր <span><</span>div> տարրերը և բոլոր <span><</span>p> տարրերը</td>
                     </tr>
                 </table>
+            </section>
+            <br>
+            <hr>
+            <br>
+            <section id="p4">
+                <h1>CSS Backgrounds (ֆոն)</h1>
+                <hr>
+                <p>CSS ֆոնային հատկությունները օգտագործվում են տարրերի համար ֆոնային էֆեկտներ ավելացնելու համար:</p>
+                <hr>
+                <div style="background-image: url(assets/images/mountain.jpg); padding: 25px;">
+                    <p>Այս գլուխներում դուք կիմանաք հետևյալ CSS ֆոնային հատկությունների մասին</p>
+                    <ul>
+                        <li>background-color</li>
+                        <li>background-image</li>
+                        <li>background-repeat</li>
+                        <li>background-attachment</li>
+                        <li>background-position</li>
+                        <li>background (սղագրություն)</li>
+                    </ul>
+                </div>
+                <hr>
+                <h2>CSS background-color</h2>
+                <p>background-color հատկությունը սահմանում է տարրի ֆոնի գույնը:</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>body</span> {<br><f>background-color</f>: <a>lightblue</a>;<br>}  
+                        </p>
+                    </div>
+                    <a href="#link" target="_blank">
+                        <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                    </a> 
+                </div>
+                <p>CSS-ով գույնը առավել հաճախ նշվում է հետևյալով.</p>
+                <ul>
+                    <li>վավեր գույնի անուն, ինչպես "red"</li>
+                    <li>HEX արժեք, ինչպես "#ff0000"</li>
+                    <li>RGB արժեք, ինչպես "rgb(255,0,0)"</li>
+                    <li>RGBA արժեք, ինչպես "rgba(255,0,0, 0.6)"</li>
+                </ul>
+                <hr>
+                <h2>Այլ տարրեր</h2>
+                <p>Դուք կարող եք սահմանել ֆոնի գույնը ցանկացած HTML տարրի համար</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <p>Այստեղ <span><</span>h1>, <span><</span>p> և <span><</span>div> տարրերը կունենան տարբեր ֆոնային գույներ.</p>
+                    <div class="code-doc">
+                        <p>
+                            <span>div</span> {<br><f>background-color</f>: <a>lightblue</a>;<br>}  
+                            <br><br>
+                            <span>h1</span> {<br><f>background-color</f>: <a>blue</a>;<br>}
+                            <br><br>
+                            <span>p</span> {<br><f>background-color</f>: <a>green</a>;<br>}
+                        </p>
+                    </div>
+                    <a href="#link" target="_blank">
+                        <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                    </a> 
+                </div>
+                <h2>Անթափանցիկություն / Թափանցիկություն</h2>
+                <p><span style="background: #417dff; padding: 1px 7px; line-height: 25px;">opacity</span>
+                     հատկությունը սահմանում է տարրի անթափանցիկությունը/թափանցիկությունը: 
+                     Այն կարող է վերցնել 0,0 - 1,0 արժեք: Որքան ցածր է արժեքը, այնքան ավելի թափանցիկ.</p>
+                <div class="optblock">
+                    <div>
+                        <p>opacity 1</p>
+                    </div>
+                    <div>
+                        <p>opacity 0.6</p>
+                    </div>
+                    <div>
+                        <p>opacity 0.3</p>
+                    </div>
+                    <div>
+                        <p>opacity 0.1</p>
+                    </div>
+                </div>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>div</span> {<br><f>background-color</f>: <a>blue</a>;<br>
+                                <f>opacity</f>: <a>0.6</a>;<br>}  
+                        </p>
+                    </div>
+                    <a href="#link" target="_blank">
+                        <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                    </a> 
+                </div>
+                <div class="note">
+                    <p><b>Նշում:</b> Անթափանցիկության հատկությունն օգտագործելով 
+                        տարրի ֆոնին թափանցիկություն ավելացնելու համար, նրա բոլոր զավակ տարրերը 
+                        ժառանգում են նույն թափանցիկությունը:</p>
+                </div>
+                <hr>
+                <h2>Թափանցիկություն՝ օգտագործելով RGBA</h2>
+                <p>Եթե դուք չեք ցանկանում անթափանցիկություն կիրառել զավակ տարրերի վրա, 
+                    ինչպես վերը նշված մեր օրինակում, օգտագործեք RGBA գույնի արժեքները: 
+                    Հետևյալ օրինակը սահմանում է ֆոնի գույնի անթափանցիկությունը և ոչ թե տեքստը.</p>
+                    <div class="optblock2">
+                        <div>
+                            <p>100% opacity</p>
+                        </div>
+                        <div>
+                            <p>60% opacity</p>
+                        </div>
+                        <div>
+                            <p>30% opacity</p>
+                        </div>
+                        <div>
+                            <p>10% opacity</p>
+                        </div>
+                    </div>
+                    <p>Բացի RGB-ից, դուք կարող եք օգտագործել RGB գույնի արժեքը ալֆա ալիքով (RGBA), 
+                        որը սահմանում է գույնի անթափանցիկությունը:</p>
+                    <p>RGBA գունային արժեքը նշվում է՝ rgba (կարմիր, կանաչ, կապույտ, ալֆա): 
+                        Ալֆա պարամետրը 0.0 (լիովին թափանցիկ) և 1.0 (լիովին անթափանց) թիվ է:</p>
+                    <p>Հուշում. Դուք ավելին կիմանաք RGBA գույների մասին մեր CSS Գույներ գլխում:</p>
+                    <div class="html-back">
+                        <h3>ՕՐԻՆԱԿ</h3>
+                        <div class="code-doc">
+                            <p>
+                                <span>div</span> {<br><f>background</f>: <a>rgba(0, 128, 0, 0.3)</a>;<br>}  
+                            </p>
+                        </div>
+                        <a href="#link" target="_blank">
+                            <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                        </a> 
+                    </div>
+                    <hr>
+                    <h2>CSS background-image</h2>
+                    <p>Background-image հատկությունը սահմանում է պատկեր, որն օգտագործվում է որպես տարրի ֆոն:</p>
+                    <p>Լռելյայնորեն (դիֆոլտ), պատկերը կրկնվում է այնպես, որ այն ծածկում է ամբողջ տարրը:</p>
+                    <div class="html-back">
+                        <h3>ՕՐԻՆԱԿ</h3>
+                        <p>Սահմանեք էջի ֆոնային պատկերը՝</p>
+                        <div class="code-doc">
+                            <p>
+                                <span>body</span> {<br><f>background-image</f>: <a>url("TCFLogo.png")</a>;<br>}  
+                            </p>
+                        </div>
+                        <a href="#link" target="_blank">
+                            <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                        </a> 
+                    </div>
+                    <div class="note">
+                        <p><b>Նշում:</b> Ֆոնային պատկեր օգտագործելիս օգտագործեք այնպիսի պատկեր, 
+                            որը չի խանգարում տեքստին:</p>
+                    </div>
+                    <p>Ֆոնային պատկերը կարող է սահմանվել նաև որոշակի տարրերի համար, ինչպես օրինակ <span><</span>p> տարրը.</p>
+                    <div class="html-back">
+                        <h3>ՕՐԻՆԱԿ</h3>
+                        <div class="code-doc">
+                            <p>
+                                <span>p</span> {<br><f>background-image</f>: <a>url("TCFLogo.png")</a>;<br>}  
+                            </p>
+                        </div>
+                        <a href="#link" target="_blank">
+                            <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                        </a> 
+                    </div>
+                    <hr>
+                    <h2>CSS background-repeat</h2>
+                    <p>Լռելյայնորեն, background-image հատկությունը կրկնում է պատկերը ինչպես հորիզոնական, 
+                        այնպես էլ ուղղահայաց:</p>
+                        <div class="html-back">
+                            <h3>ՕՐԻՆԱԿ</h3>
+                            <div class="code-doc">
+                                <p>
+                                    <span>body</span> {<br><f>background-image</f>: <a>url("TCFLogo.png")</a>;<br>}  
+                                </p>
+                            </div>
+                            <a href="#link" target="_blank">
+                                <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                            </a> 
+                        </div>
+                        <p>Եթե վերևի պատկերը կրկնվում է միայն հորիզոնական (background-repeat: repeat-x;), ֆոնն ավելի լավ տեսք կունենա.</p>
+                        <div class="html-back">
+                            <h3>ՕՐԻՆԱԿ</h3>
+                            <div class="code-doc">
+                                <p>
+                                    <span>body</span> {<br><f>background-image</f>: <a>url("TCFLogo.png")</a>;<br>
+                                    <f>background-repeat</f>: <a>repeat-x</a>;<br>}  
+                                </p>
+                            </div>
+                            <a href="#link" target="_blank">
+                                <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                            </a> 
+                        </div>
+                        <div class="note">
+                            <p><b>Հուշում:</b> Պատկերը ուղղահայաց կրկնելու համար սահմանեք background-repeat: repeat-y;</p>
+                        </div>
+                        <hr>
+                        <h2>CSS background-repeat: no-repeat</h2>
+                        <p>Ֆոնի պատկերը միայն մեկ անգամ ցուցադրելը նույնպես նշված է background-repeat հատկությամբ.</p>
+                        <div class="html-back">
+                            <h3>ՕՐԻՆԱԿ</h3>
+                            <p>Ցուցադրել ֆոնային պատկերը միայն մեկ անգամ՝</p>
+                            <div class="code-doc">
+                                <p>
+                                    <span>body</span> {<br><f>background-image</f>: <a>url("TCFLogo.png")</a>;<br>
+                                    <f>background-repeat</f>: <a>no-repeat</a>;<br>}  
+                                </p>
+                            </div>
+                            <a href="#link" target="_blank">
+                                <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                            </a> 
+                        </div>
+                        <hr>
+                        <h2>CSS background-position</h2>
+                        <p>background-position հատկությունն օգտագործվում է ֆոնային պատկերի դիրքը նշելու համար:</p>
+                        <div class="html-back">
+                            <h3>ՕՐԻՆԱԿ</h3>
+                            <p>Տեղադրեք ֆոնային պատկերը վերևի աջ անկյունում</p>
+                            <div class="code-doc">
+                                <p>
+                                    <span>body</span> {<br><f>background-image</f>: <a>url("TCFLogo.png")</a>;<br>
+                                    <f>background-repeat</f>: <a>no-repeat</a>;<br>
+                                    <f>background-position</f>: <a>right top</a>;<br>}  
+                                </p>
+                            </div>
+                            <a href="#link" target="_blank">
+                                <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                            </a> 
+                        </div>
+                        <hr>
+                        <h2>CSS background-attachment</h2>
+                        <p>Background-attachment հատկությունը սահմանում է, թե արդյոք ֆոնային պատկերը պետք է սկրոլ լինի, թե ֆիքսվի.</p>
+                        <div class="html-back">
+                            <h3>ՕՐԻՆԱԿ</h3>
+                            <p>Տեղադրեք ֆոնային պատկերը վերևի աջ անկյունում</p>
+                            <div class="code-doc">
+                                <p>
+                                    <span>body</span> {<br><f>background-image</f>: <a>url("TCFLogo.png")</a>;<br>
+                                    <f>background-repeat</f>: <a>no-repeat</a>;<br>
+                                    <f>background-position</f>: <a>right top</a>;<br>
+                                    <f>background-attachment</f>: <a>fixed</a>;<br>}  
+                                </p>
+                            </div>
+                            <a href="#link" target="_blank">
+                                <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                            </a> 
+                        </div>
+                        <div class="html-back">
+                            <h3>ՕՐԻՆԱԿ</h3>
+                            <p>Տեղադրեք ֆոնային պատկերը վերևի աջ անկյունում</p>
+                            <div class="code-doc">
+                                <p>
+                                    <span>body</span> {<br><f>background-image</f>: <a>url("TCFLogo.png")</a>;<br>
+                                    <f>background-repeat</f>: <a>no-repeat</a>;<br>
+                                    <f>background-position</f>: <a>right top</a>;<br>
+                                    <f>background-attachment</f>: <a>scroll</a>;<br>}  
+                                </p>
+                            </div>
+                            <a href="#link" target="_blank">
+                                <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                            </a> 
+                        </div>
+                        <hr>
+                        <h2>CSS background – Հակիրճ հատկություն</h2>
+                        <p>Կոդը կրճատելու համար հնարավոր է նաև նշել բոլոր ֆոնային հատկությունները մեկ առանձին հատկության մեջ:
+                             Սա կոչվում է սղագրության հատկություն:</p>
+                        <p>Գրելու փոխարեն.</p>
+                        <div class="html-back">
+                            <div class="code-doc">
+                                <p>
+                                    <span>body</span> {<br>
+                                        <f>background-color</f>: <a>#fff</a>;   <br>
+                                        <f>background-image</f>: <a>url("TCFLogo.png")</a>;<br>
+                                        <f>background-repeat</f>: <a>no-repeat</a>;<br>
+                                        <f>background-position</f>: <a>right top</a>;<br>}   
+                                </p>
+                            </div>
+                        </div>
+                        <p>Դուք կարող եք օգտագործել սղագրության հատկությունը background</p>
+                        <div class="html-back">
+                            <h3>ՕՐԻՆԱԿ</h3>
+                            <p>Տեղադրեք ֆոնային պատկերը վերևի աջ անկյունում</p>
+                            <div class="code-doc">
+                                <p>
+                                    <span>body</span> {<br>
+                                    <f>background-</f>: <a>#fff  url("TCFLogo.png")  no-repeat  right top</a><br>}  
+                                </p>
+                            </div>
+                            <a href="#link" target="_blank">
+                                <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                            </a> 
+                        </div>
+                        <p>Սղագրության հատկությունն օգտագործելիս գույքի արժեքների հերթականությունը հետևյալն է.</p>
+                        <ul>
+                            <li><span style="background: #417dffb2; padding: 1px 7px;">background-color</span></li>
+                            <li><span style="background: #417dffb2; padding: 1px 7px;">background-image</span></li>
+                            <li><span style="background: #417dffb2; padding: 1px 7px;">background-repeat</span></li>
+                            <li><span style="background: #417dffb2; padding: 1px 7px;">background-attachment</span></li>
+                            <li><span style="background: #417dffb2; padding: 1px 7px;">background-position</span></li>
+                        </ul>
+                        <p>Կարևոր չէ, թե սեփականության արժեքներից մեկը բացակայում է, քանի դեռ մյուսներն այս հերթականությամբ են։ Նկատի ունեցեք, 
+                            որ վերը նշված օրինակներում մենք չենք օգտագործում background-attachment հատկությունը, քանի որ այն արժեք չունի:</p>
             </section>
         </div>
     </div>

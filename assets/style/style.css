@@ -10,6 +10,10 @@ body {
   font-family: arial;
 }
 
+p {
+  line-height: 23px;
+}
+
 .body {
   width: 100%;
   overflow: hidden;
@@ -366,6 +370,78 @@ body {
 .content table th, .content table td {
   height: 40px;
   padding: 0 10px;
+}
+
+.content .optblock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content .optblock div {
+  background: blue;
+  width: 200px;
+  height: 140px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 2px;
+  color: #000;
+}
+
+.content .optblock div:nth-child(2) {
+  opacity: 0.6;
+}
+
+.content .optblock div:nth-child(3) {
+  opacity: 0.3;
+}
+
+.content .optblock div:nth-child(4) {
+  opacity: 0.1;
+}
+
+.content .optblock2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content .optblock2 div {
+  background: #0004ff;
+  width: 200px;
+  height: 140px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 2px;
+  color: #000;
+}
+
+.content .optblock2 div:nth-child(2) {
+  background: rgba(0, 4, 255, 0.6);
+}
+
+.content .optblock2 div:nth-child(3) {
+  background: rgba(0, 4, 255, 0.3);
+}
+
+.content .optblock2 div:nth-child(4) {
+  background: rgba(0, 4, 255, 0.1);
 }
 
 .mobile-menu {
