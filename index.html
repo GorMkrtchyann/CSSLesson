@@ -40,7 +40,7 @@
                 <li><a class="links" href="#p3">CSS Ընտրիչներ</a></li>
                 <li><a class="links" href="#p4">CSS Backgrounds (ֆոն)</a></li>
                 <li><a class="links" href="#p5">CSS Գույներ</a></li>
-                <li><a class="links" href="#p6">HTML Ստայլեր</a></li>
+                <li><a class="links" href="#p6">CSS Եզրագծեր(border)</a></li>
                 <li><a class="links" href="#p7">HTML Հղումներ</a></li>
                 <li><a class="links" href="#p8">HTML Աղյուսակներ</a></li>
                 <li><a class="links" href="#p9">HTML Ցուցակներ</a></li>
@@ -753,6 +753,214 @@
                     <a href="#link" target="_blank">
                         <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
                     </a> 
+                </div>
+            </section>
+            <br>
+            <hr>
+            <br>
+            <section id="p6">
+                <h1>CSS Եզրագծեր(border)</h1>
+                <hr>
+                <p>CSS եզրագծի հատկությունները թույլ են տալիս նշել տարրի եզրագծի ոճը, լայնությունը և գույնը:</p>
+                <hr>
+                <p style="border: 1px solid; padding: 15px; margin-top: 30px;">Ես բոլոր կողմերից եզրագծեր ունեմ.</p>
+                <p style="border-bottom: 1px solid red; padding: 15px;">Ես կարմիր ստորին եզրագիծ ունեմ:</p>
+                <p style="border: 1px solid; border-radius: 20px; padding: 15px;">Ես կլորացված եզրագծեր ունեմ:</p>
+                <p style="border-left: 5px solid blue; background: #aec8ff; padding: 15px;">Ես ունեմ կապույտ ձախ եզրագիծ:</p>
+                <hr>
+                <h2>CSS եզրագծի ոճ</h2>
+                <p><uu>border-style</uu> սահմանում է, թե ինչպիսի եզրագիծ պետք է ցուցադրվի:</p>
+                <p>Թույլատրվում են հետևյալ արժեքները.</p>
+                <ul>
+                    <li><uu>dotted</uu> - Սահմանում է կետավոր եզրագիծ</li>
+                    <li><uu>dashed</uu> - Սահմանում է կտրված եզրագիծ</li>
+                    <li><uu>solid</uu> - Սահմանում է սովորական եզրագիծ</li>
+                    <li><uu>double</uu> - Սահմանում է կրկնակի եզրագիծ</li>
+                    <li><uu>groove</uu> - Սահմանում է 3D ակոսավոր եզրագիծ: Էֆեկտը կախված է եզրագծի գույնի արժեքից</li>
+                    <li><uu>ridge</uu> - Սահմանում է 3D շողքային եզրագիծ: Էֆեկտը կախված է եզրագծի գույնի արժեքից</li>
+                    <li><uu>inset</uu> - Սահմանում է 3D ներդիր եզրագիծ: Էֆեկտը կախված է եզրագծի գույնի արժեքից</li>
+                    <li><uu>outset</uu> - Սահմանում է 3D սկզբնական սահման: Էֆեկտը կախված է եզրագծի գույնի արժեքից</li>
+                    <li><uu>none</uu> - Եզրագիծ չի սահմանում</li>
+                    <li><uu>hidden</uu> - Սահմանում է թաքնված եզրագիծ</li>
+                </ul>
+                <p><uu>border-style</uu> հատկությունը կարող է ունենալ մեկից չորս արժեք (վերևի եզրագծի, աջ եզրագծի, ներքևի եզրագծի և ձախ եզրագծի համար):</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>p.dotted</span> {<f style="margin: 0;">border-style</f>: <a>dotted</a>;}
+                            <br>
+                            <span>p.dashed</span> {<f style="margin: 0;">border-style</f>: <a>dashed</a>;}
+                            <br>
+                            <span>p.solid</span> {<f style="margin: 0;">border-style</f>: <a>solid</a>;}
+                            <br>
+                            <span>p.double</span> {<f style="margin: 0;">border-style</f>: <a>double</a>;}
+                            <br>
+                            <span>p.groove</span> {<f style="margin: 0;">border-style</f>: <a>groove</a>;}
+                            <br>
+                            <span>p.ridge</span> {<f style="margin: 0;">border-style</f>: <a>ridge</a>;}
+                            <br>
+                            <span>p.inset</span> {<f style="margin: 0;">border-style</f>: <a>inset</a>;}
+                            <br>
+                            <span>p.outset</span> {<f style="margin: 0;">border-style</f>: <a>outset</a>;}
+                            <br>
+                            <span>p.none</span> {<f style="margin: 0;">border-style</f>: <a>none</a>;}
+                            <br>
+                            <span>p.hidden</span> {<f style="margin: 0;">border-style</f>: <a>hidden</a>;}
+                            <br>
+                            <span>p.mix</span> {<f style="margin: 0;">border-style</f>: <a>dotted dashed solid double</a>;}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="border-style: dotted">Կետավոր եզրագիծ</p>
+                        <p style="border-style: dashed;">Կտրված եզրագիծ</p>
+                        <p style="border-style: solid;">Սովորական եզրագիծ</p>
+                        <p style="border-style: double;">Կրկնակի եզրագիծ</p>
+                        <p style="border-style: groove;">Մի ակոս եզրագիծ. Էֆեկտը կախված է եզրագծի գույնի արժեքից</p>
+                        <p style="border-style: ridge;">Շողքային եզրագիծ. Էֆեկտը կախված է եզրագծի գույնի արժեքից:</p>
+                        <p style="border-style: inset;">Ներդիր եզրագիծ: Էֆեկտը կախված է եզրագծի գույնի արժեքից:</p>
+                        <p style="border-style: outset;">Նախնական սահման. Էֆեկտը կախված է եզրագծի գույնի արժեքից:</p>
+                        <p style="border-style: none;">Ոչ մի եզրագիծ</p>
+                        <p style="border-style: hidden;">Թաքնված եզրագիծ</p>
+                        <p style="border-style: dotted dashed solid double;">Խառը եզրագիծ</p>
+                    </div>
+                </div>
+                <hr>
+                <h2>CSS Եզրագիծ Լայնությունը</h2>
+                <p><uu>border-width</uu> հատկությունը սահմանում է չորս եզրագծի լայնությունը:</p>
+                <p>Լայնությունը կարող է սահմանվել որպես որոշակի չափ (px, pt, cm, em և այլն) կամ օգտագործելով երեք նախապես սահմանված արժեքներից մեկը՝ բարակ, միջին կամ հաստ.</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>p.one</span> {<br><f>border-style</f>: <a>dotted</a>;<br>
+                                <f>border-width</f>: <a>5px</a>;<br>}
+                            <br>
+                            <span>p.two</span> {<br><f>border-style</f>: <a>dotted</a>;<br>
+                                <f>border-width</f>: <a>medium</a>;<br>}
+                            <br>
+                            <span>p.tree</span> {<br><f>border-style</f>: <a>solid</a>;<br>
+                                <f>border-width</f>: <a>2px</a>;<br>}
+                            <br>
+                            <span>p.four</span> {<br><f>border-style</f>: <a>solid</a>;<br>
+                                <f>border-width</f>: <a>thick</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="border-style: dotted; border-width: 5px;">5px border-width</p>
+                        <p style="border-style: dotted; border-width: medium;">medium border-width</p>
+                        <p style="border-style: solid; border-width: 2px;">2px border-width</p>
+                        <p style="border-style: solid; border-width: thick;">thick border-width</p>
+                    </div>
+                </div>
+                <hr>
+                <p><uu>border-width</uu> հատկությունը կարող է ունենալ մեկից չորս արժեք (վերևի եզրագծի, աջ եզրագծի, ներքևի եզրագծի և ձախ եզրագծի համար).</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>p.one</span> {<br><f>border-style</f>: <a>solid</a>;<br>
+                                <f>border-width</f>: <a>5px 20px</a>;<br>}
+                            <br>
+                            <span>p.two</span> {<br><f>border-style</f>: <a>solid</a>;<br>
+                                <f>border-width</f>: <a>20px 5px</a>;<br>}
+                            <br>
+                            <span>p.tree</span> {<br><f>border-style</f>: <a>solid</a>;<br>
+                                <f>border-width</f>: <a>25px 10px 4px 35px</a>;<br>}
+                            <br>
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="border-style: solid; border-width: 5px 20px;">5px 20px border-width</p>
+                        <p style="border-style: solid; border-width: 20px 5px;">20px 5px border-width</p>
+                        <p style="border-style: solid; border-width: 25px 10px 4px 35px;">25px 10px 4px 35px border-width</p>
+                    </div>
+                </div>
+                <hr>
+                <h2>CSS Եզրագծի Գույնը</h2>
+                <p><uu>border-color</uu> հատկությունն օգտագործվում է չորս եզրագծերի գույնը սահմանելու համար:</p>
+                <p>Գույնը կարող է սահմանվել հետևյալով.</p>
+                <ul>
+                    <li>անուն - նշեք գույնի անուն, ինչպես "red"</li>
+                    <li>HEX - նշեք HEX արժեք, ինչպես "#ff0000"</li>
+                    <li>RGB - նշեք RGB արժեք, օրինակ՝ "rgb(255,0,0)":</li>
+                </ul>
+                <div class="note">
+                    <p><b>Նշում:</b> Եթե սահմանի գույնը սահմանված չէ, այն ժառանգում է տարրի գույնը:</p>
+                </div>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>p.one</span> {<br><f>border-style</f>: <a>solid</a>;<br>
+                                <f>border-color</f>: <a>red</a>;<br>}
+                            <br>
+                            <span>p.two</span> {<br><f>border-style</f>: <a>solid</a>;<br>
+                                <f>border-color</f>: <a>green</a>;<br>}
+                            <br>
+                            <span>p.tree</span> {<br><f>border-style</f>: <a>solid</a>;<br>
+                                <f>border-color</f>: <a>blue</a>;<br>}
+                            <br>
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="border-style: solid; border-color: red;">Կարմիր եզրագիծ</p>
+                        <p style="border-style: dotted; border-color: green;">Կանաչ եզրագիծ</p>
+                        <p style="border-style: dashed; border-color: blue;">Կապույտ եզրագիծ</p>
+                    </div>
+                </div>
+                <p><uu>border-color</uu> հատկությունը կարող է ունենալ մեկից չորս արժեք (վերևի եզրագծի, աջ եզրագծի, ներքևի եզրագծի և ձախ եզրագծի համար):</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>p.one</span> {<br><f>border-style</f>: <a>solid</a>;<br>
+                                <f>border-color</f>: <a>#ff0000 green rgb(0, 30, 255) yellow</a>; /* #ff0000 վերև, կանաչ աջ, rgb(0, 30, 255) ներքև և դեղին ձախ */<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="border-style: solid; border-color: #ff0000 green rgb(0, 30, 255) yellow;">Խառը եզրագիծ</p>
+                    </div>
+                </div>
+                <hr>
+                <h2>CSS Եզրագիծ - Սղագրություն</h2>
+                <p>Ինչպես տեսաք նախորդ էջում, կան բազմաթիվ հատկություններ, որոնք պետք է հաշվի առնել եզրագծերի հետ գործ ունենալիս:</p>
+                <p>Կոդը կրճատելու համար հնարավոր է նաև նշել բոլոր առանձին եզրագծաին հատկությունները մեկ սեփականության մեջ:</p>
+                <p><uu>border</uu> հատկությունը սղագրության հատկություն է հետևյալ անհատական սահմանային հատկությունների համար.</p>
+                <ul>
+                    <li><uu>border-width</uu></li>
+                    <li><uu>border-style</uu>(պարտադիր)</li>
+                    <li><uu>border-color</uu></li>
+                </ul>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>p</span> {<br><f>border</f>: <a>5px solid red</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="border: 5px solid red;">Ինչ որ մի տեքստ</p>
+                    </div>
+                </div>
+                <p>Դուք կարող եք նաև նշել բոլոր առանձին եզրագծային հատկությունները միայն մեկ կողմի համար.</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>p</span> {<br><f>border-left</f>: <a>5px solid red</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="border-left: 5px solid red;">Ինչ որ մի տեքստ</p>
+                    </div>
                 </div>
             </section>
         </div>
