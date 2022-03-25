@@ -39,7 +39,7 @@
                 <li><a class="links" href="#p2">CSS Շարահյուսություն</a></li>
                 <li><a class="links" href="#p3">CSS Ընտրիչներ</a></li>
                 <li><a class="links" href="#p4">CSS Backgrounds (ֆոն)</a></li>
-                <li><a class="links" href="#p5">HTML Պարագրաֆ</a></li>
+                <li><a class="links" href="#p5">CSS Գույներ</a></li>
                 <li><a class="links" href="#p6">HTML Ստայլեր</a></li>
                 <li><a class="links" href="#p7">HTML Հղումներ</a></li>
                 <li><a class="links" href="#p8">HTML Աղյուսակներ</a></li>
@@ -633,6 +633,127 @@
                         </ul>
                         <p>Կարևոր չէ, թե սեփականության արժեքներից մեկը բացակայում է, քանի դեռ մյուսներն այս հերթականությամբ են։ Նկատի ունեցեք, 
                             որ վերը նշված օրինակներում մենք չենք օգտագործում background-attachment հատկությունը, քանի որ այն արժեք չունի:</p>
+            </section>
+            <br>
+            <hr>
+            <br>
+            <section id="p5">
+                <h1>CSS Գույներ</h1>
+                <hr>
+                <p>Գույները սահմանվում են՝ օգտագործելով նախապես սահմանված գունային անունները կամ RGB, HEX, HSL, RGBA, HSLA արժեքները:</p>
+                <hr>
+                <h2>CSS ֆոնի գույնը</h2>
+                <p>Դուք կարող եք սահմանել HTML տարրերի ֆոնի գույնը</p>
+                <h3 style="background-color: dodgerblue; color: #fff; text-align: center; padding: 5px;">Բարի Երեկո</h3>
+                <p style="background-color: tomato; color: #fff; padding: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, 
+                    explicabo sit modi quasi eum temporibus iusto qui asperiores obcaecati excepturi cumque fuga autem 
+                    amet repellendus assumenda error ipsa facere non.</p>
+                    <div class="html-back">
+                        <h3>ՕՐԻՆԱԿ</h3>
+                        <div class="code-doc">
+                            <p>
+                                <span>h3</span> {<br><f>background-color</f>: <a>dodgerblue</a>;<br>}
+                                <br><br>
+                                <span>p</span> {<br><f>background-color</f>: <a>tomato</a>;<br>}
+                            </p>
+                        </div>
+                        <a href="#link" target="_blank">
+                            <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                        </a> 
+                    </div>
+                <hr>
+                <h2>CSS տեքստի գույնը</h2>
+                <p>Դուք կարող եք սահմանել տեքստի գույնը.</p>
+                <h3 style="color: dodgerblue;">Բարի Երեկո</h3>
+                <p style="color: tomato;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Quas iusto illo incidunt dolore beatae voluptate fuga. Officiis, facere? </p>
+                    <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>h3</span> {<br><f>color</f>: <a>dodgerblue</a>;<br>}
+                            <br><br>
+                            <span>p</span> {<br><f>color</f>: <a>tomato</a>;<br>}
+                        </p>
+                    </div>
+                    <a href="#link" target="_blank">
+                        <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                    </a> 
+                </div>
+                <hr>
+                <h2>CSS եզրագծերի(border) գույնը</h2>
+                <p>Դուք կարող եք սահմանել եզրագծերի գույնը.</p>
+                <h3 style="border: 2px solid tomato; padding: 10px;">Բարի Երեկո</h3>
+                <h3 style="border: 2px solid dodgerblue; padding: 10px;">Բարի Երեկո</h3>
+                <h3 style="border: 2px solid green; padding: 10px;">Բարի Երեկո</h3>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>h3</span> {<br><f>border</f>: <a>2px solid tomato</a>;<br>}
+                        </p>
+                    </div>
+                    <a href="#link" target="_blank">
+                        <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                    </a> 
+                </div>
+                <hr>
+                <h2>CSS գույնի արժեքներ</h2>
+                <p>CSS-ում գույները կարող են սահմանվել նաև RGB արժեքների, HEX արժեքների միջոցով.</p>
+                <p>Գույնի անունը Տոմատո(tomato)</p>
+                <h3 style="background-color: rgb(255, 99, 71); padding: 15px; text-align: center; color: #fff;">rgb(255, 99, 71)</h3>
+                <h4 style="background-color: #ff6347; padding: 15px; text-align: center; color: #fff;">#ff6347</h4>
+                <p>Գույնի անունը Տոմատո(tomato) բայց 50% թափանցիկ</p>
+                <h3 style="background-color: rgba(255, 99, 71, 0.5); padding: 15px; text-align: center; color: #fff;">rgba(255, 99, 71, 0.5)</h3>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>h3</span> {<br><f>background-color</f>: <a>rgb(255, 99, 71)</a>;<br>}
+                            <br><br>
+                            <span>h4</span> {<br><f>background-color</f>: <a>#ff6347</a>;<br>}
+                            <br><
+                            <br>----------------------------50% թափանցիկ-------------------------------------- <br>
+                            <span>h3</span> {<br><f>background-color</f>: <a>rgba(255, 99, 71, 0.5)</a>;<br>}
+                            <br><br>
+                        </p>
+                    </div>
+                    <a href="#link" target="_blank">
+                        <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                    </a> 
+                </div>
+                <hr>
+                <h2>CSS HEX Գույներ</h2>
+                <hr>
+                <p>Տասնվեցական գույնը նշվում է՝ #RRGGBB, որտեղ RR (կարմիր), GG (կանաչ) և BB (կապույտ) տասնվեցական ամբողջ թվերը նշում են գույնի բաղադրիչները:</p>
+                <hr>
+                <h2>HEX արժեք</h2>
+                <p>CSS-ում գույնը կարող է նշվել՝ օգտագործելով տասնվեցական արժեք հետևյալ ձևով.</p>
+                <p><b>#<i>rrggbb</i></b></p>
+                <p>Որտեղ rr (կարմիր), gg (կանաչ) և bb (կապույտ) տասնվեցական արժեքներ են 00-ի և ff-ի միջև (նույնը, ինչ տասնորդական 0-255):</p>
+                <p>Օրինակ, #ff0000-ը ցուցադրվում է որպես կարմիր, քանի որ կարմիրը դրված է իր ամենաբարձր արժեքը (ff), իսկ մյուսները՝ ամենացածր արժեքը (00):</p>
+                <p>Սևը ցուցադրելու համար բոլոր արժեքները սահմանեք 00, այսպես՝ #000000:</p>
+                <p>Սպիտակը ցուցադրելու համար բոլոր արժեքները սահմանեք ff-ի, այսպես՝ #ffffff:</p>
+                <h2>3 նիշ HEX արժեք</h2>
+                <p>Երբեմն դուք կտեսնեք եռանիշ HEX կոդ CSS-ում:</p>
+                <p>Եռանիշ HEX կոդը ունի հետևյալ ձևը.</p>
+                <p><b>#<i>rgb</i></b></p>
+                <p>Որտեղ r, g և b-ը ներկայացնում է կարմիր, կանաչ և կապույտ բաղադրիչները 0-ից և f-ի միջև արժեքներով:</p>
+                <p>Եռանիշ HEX կոդը կարող է օգտագործվել միայն այն դեպքում, երբ երկու արժեքներն էլ (RR, GG և BB) նույնն են յուրաքանչյուր բաղադրիչի համար: Այսպիսով, եթե ունենք #ff00cc, ապա այն կարելի է գրել այսպես՝ #f0c։</p>
+                <p>Here is an example:</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>body</span> {<br><f>background-color</f>: <a>#fc9</a>; /* նույնը, ինչ #ffcc99 */<br>}
+                            <br><br>
+                            <span>h1</span> {<br><f>color</f>: <a>#f0f</a>; /* նույնը, ինչ #ff00ff */<br>}
+                        </p>
+                    </div>
+                    <a href="#link" target="_blank">
+                        <button class="btt">Փորձիր ինքդ <i class="fa fa-angle-double-right"></i></button>
+                    </a> 
+                </div>
             </section>
         </div>
     </div>
