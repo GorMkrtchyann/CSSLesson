@@ -1172,6 +1172,145 @@
                 <hr>
                 <p style="border: 1px solid dodgerblue; padding: 70px;">Այս տարրը ունի 70px padding:</p>
                 <p>CSS-ի միջոցով դուք լիովին վերահսկում եք padding-ը: Տարրի յուրաքանչյուր կողմի համար (վերև, աջ, ներքև և ձախ) padding դնելու հատկություններ կան:</p>
+                <hr>
+                <h2>Padding - Անհատական կողմեր</h2>
+                <p>CSS-ն ունի տարրի յուրաքանչյուր կողմի համար padding հատկություն.</p>
+                <ul>
+                    <li><uu>padding-top</uu></li>
+                    <li><uu>padding-right</uu></li>
+                    <li><uu>padding-bottom</uu></li>
+                    <li><uu>padding-left</uu></li>
+                </ul>
+                <p>padding-ի բոլոր հատկությունները կարող են ունենալ հետևյալ արժեքները.</p>
+                <ul>
+                    <li>երկարություն - նշում է padding px, pt, cm և այլն:</li>
+                    <li>% - սահմանում է padding պարունակող տարրի լայնության %-ով</li>
+                    <li>ժառանգել - նշում է, որ padding-ը պետք է ժառանգվի մայր տարրից</li>
+                </ul>
+                <div class="note">
+                    <p><b>Նշում:</b> Բացասական արժեքներ չեն թույլատրվում:</p>
+                </div>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <p>Սահմանեք տարբեր padding-ներ <span><</span>div> տարրի բոլոր չորս կողմերի համար.</p>
+                    <div class="code-doc">
+                        <p>
+                            <span>p</span> {<br><f>padding-top</f>: <a>100px</a>;<br>
+                            <f>padding-bottom</f>: <a>10px</a>;<br>
+                            <f>padding-right</f>: <a>180px</a>;<br>
+                            <f>padding-left</f>: <a>80px</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="padding: 100px 180px 10px 80px; border: 1px solid dodgerblue;">Ինչ որ մի տեքստ</p>
+                    </div>
+                </div>
+                <hr>
+                <h2>Padding - Սղագրության հատկություն</h2>
+                <p>Կոդը կրճատելու համար հնարավոր է նշել բոլոր padding հատկությունները մեկ սեփականության մեջ:</p>
+                <p><uu>padding</uu> հատկությունը սղագրության հատկություն է հետևյալ անհատական padding հատկությունների համար.</p>
+                <ul>
+                    <li><uu>padding-top</uu></li>
+                    <li><uu>padding-right</uu></li>
+                    <li><uu>padding-bottom</uu></li>
+                    <li><uu>padding-left</uu></li>
+                </ul>
+                <p>Այսպիսով, ահա թե ինչպես է այն աշխատում.</p>
+                <p>Եթե <uu>padding</uu> հատկությունը չորս արժեք ունի.</p>
+                <ul>
+                    <li>padding: 25px 50px 75px 100px;
+                        <ul>
+                            <li>top padding 25px-ն է</li>
+                            <li>right padding 50px-ն է</li>
+                            <li>bottom padding 75px-ն է</li>
+                            <li>left padding 100px-ն է</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <p>Օգտագործեք padding սղագրության հատկությունը չորս արժեքներով</p>
+                    <div class="code-doc">
+                        <p>
+                            <span>p</span> {<br><f>padding</f>: <a>100px 10px 180px 80px</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="padding: 100px 180px 10px 80px; border: 1px solid dodgerblue;">Ինչ որ մի տեքստ</p>
+                    </div>
+                </div>
+                <hr>
+                <p>Եթե <uu>padding</uu> հատկությունը երեք արժեք ունի.</p>
+                <ul>
+                    <li>padding: 25px 50px 75px;
+                        <ul>
+                            <li>top padding 25px-ն է</li>
+                            <li>right left padding 50px-ն է</li>
+                            <li>bottom padding 75px-ն է</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <p>Օգտագործեք padding սղագրության հատկությունը երեք արժեքներով</p>
+                    <div class="code-doc">
+                        <p>
+                            <span>p</span> {<br><f>padding</f>: <a>25px 50px 75px</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="padding: 25px 50px 75px; border: 1px solid dodgerblue;">Ինչ որ մի տեքստ</p>
+                    </div>
+                </div>
+                <hr>
+                <p>Եթե <uu>padding</uu> հատկությունը երկու արժեք ունի.</p>
+                <ul>
+                    <li>padding: 25px 50px;
+                        <ul>
+                            <li>top bottom padding 25px-ն է</li>
+                            <li>right left padding 50px-ն է</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <p>Օգտագործեք padding սղագրության հատկությունը երկու արժեքներով</p>
+                    <div class="code-doc">
+                        <p>
+                            <span>p</span> {<br><f>padding</f>: <a>25px 50px</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="padding: 25px 50px; border: 1px solid dodgerblue;">Ինչ որ մի տեքստ</p>
+                    </div>
+                </div>
+                <p>Եթե <uu>padding</uu> հատկությունը մեկ արժեք ունի.</p>
+                <ul>
+                    <li>padding: 25px;
+                        <ul>
+                            <li>top right bottom left padding 25px-ն է</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <p>Օգտագործեք padding սղագրության հատկությունը մեկ արժեքներով</p>
+                    <div class="code-doc">
+                        <p>
+                            <span>p</span> {<br><f>padding</f>: <a>25px</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="padding: 25px; border: 1px solid dodgerblue;">Ինչ որ մի տեքստ</p>
+                    </div>
+                </div>
+                <hr>
+                <h2>Padding և տարրի լայնություն</h2>
             </section>
         </div>
     </div>
