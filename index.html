@@ -46,6 +46,12 @@
                 <li><a class="links" href="#p9">CSS Height / Width</a></li>
                 <li><a class="links" href="#p10">CSS Box մոդել</a></li>
                 <li><a class="links" href="#p11">CSS Outline</a></li>
+                <h2>CSS Տեքստ</h2>
+                <li><a class="links" href="#p12">CSS Տեքստ</a></li>
+                <li><a class="links" href="#p13">CSS Outline</a></li>
+                <li><a class="links" href="#p14">CSS Outline</a></li>
+                <li><a class="links" href="#p15">CSS Outline</a></li>
+                <li><a class="links" href="#p16">CSS Outline</a></li>
             </ul>
         </div>
 
@@ -1712,6 +1718,494 @@
                         <td>Սահմանում է ուրվագծի լայնությունը</td>
                     </tr>
                 </table>
+            </section>
+            <br><hr><br>
+            <section id="p12">
+                <h1 style="text-decoration: underline;">CSS Տեքստ</h1>
+                <hr>
+                <p>CSS-ն ունի տեքստի ձևաչափման բազմաթիվ հատկություններ:</p>
+                <hr>
+                <br>
+                <h2>CSS Տեքստի Գույն</h2>
+                <p><uu>color</uu> հատկությունն օգտագործվում է տեքստի գույնը սահմանելու համար: Գույնը նշվում է հետևյալով.</p>
+                <ul>
+                    <li>գույնի անուն, ինչպես "red"</li>
+                    <li>HEX արժեք, ինչպես "#ff0000"</li>
+                    <li>RGB արժեք, ինչպես "rgb(255,0,0)"</li>
+                </ul>
+                <p>Էջի լռելյայն(default) տեքստի գույնը սահմանվում է մարմնի ընտրիչում:</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>body</span> {<br><f>color</f>: <a>red</a>;<br>}
+                            <br>
+                            <span>.p1</span> {<br><f>color</f>: <a>blue</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="color: red;">Ինչ որ մի տեքստ</p>
+                        <p style="color: red;">Ինչ որ մի տեքստ</p>
+                        <p style="color: blue;">Ինչ որ մի տեքստ(p1)</p>
+                        <p style="color: red;">Ինչ որ մի տեքստ</p>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <h2>CSS տեքստի հավասարեցում</h2>
+                <p>Այս գլխում դուք կսովորեք հետևյալ հատկությունների մասին.</p>
+                <ul>
+                    <li><uu>text-align</uu></li>
+                    <li><uu>text-align-last</uu></li>
+                    <li><uu>direction</uu></li>
+                    <li><uu>vertical-align</uu></li>
+                </ul>
+                <p><uu>text-align</uu> հատկությունն օգտագործվում է տեքստի հորիզոնական հավասարեցումը սահմանելու համար:</p>
+                <p>Հետևյալ օրինակը ցույց է տալիս կենտրոնացված և ձախ և աջ հավասարեցված տեքստը (ձախ հավասարեցումը կանխադրված է, 
+                    եթե տեքստի ուղղությունը ձախից աջ է, իսկ աջ հավասարեցումը կանխադրված է, եթե տեքստի ուղղությունը աջից ձախ է):</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>.p1</span> {<br><f>text-align</f>: <a>center</a>;<br>}
+                            <br>
+                            <span>.p2</span> {<br><f>text-align</f>: <a>left</a>;<br>}
+                            <br>
+                            <span>.p3</span> {<br><f>text-align</f>: <a>right</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                        <p style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                        <p style="text-align: right;">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                    </div>
+                </div>
+                <p>Երբ <uu>text-align</uu> հատկությունը սահմանվում է "justify", յուրաքանչյուր տող ձգվում է այնպես, որ յուրաքանչյուր տող ունենա հավասար լայնություն, իսկ ձախ և աջ լուսանցքները ուղիղ լինեն (ինչպես ամսագրերում և թերթերում):</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>p</span> {<br><f>text-align</f>: <a>justify</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="text-align: justify; width: 300px; border: 1px solid;">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Quae in nihil architecto qui debitis et esse molestias nesciunt iste nulla ea ipsam,
+                             commodi aut. Placeat recusandae sit repellat debitis fuga.</p>
+                    </div>
+                </div>
+                <hr>
+                <p><uu>text-align-last</uu> հատկությունը սահմանում է, թե ինչպես կարելի է հավասարեցնել տեքստի վերջին տողը:</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>.p1</span> {<br><f>text-align-last</f>: <a>center</a>;<br>}
+                            <br>
+                            <span>.p2</span> {<br><f>text-align-last</f>: <a>left</a>;<br>}
+                            <br>
+                            <span>.p3</span> {<br><f>text-align-last</f>: <a>justify</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="text-align-last: center; width: 600px; border: 1px solid;">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Quae in nihil architecto qui debitis et esse molestias nesciunt iste nulla ea ipsam,
+                             commodi aut. Placeat recusandae sit repellat debitis fuga.</p>
+                        <p style="text-align-last: left; width: 600px; border: 1px solid;">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Quae in nihil architecto qui debitis et esse molestias nesciunt iste nulla ea ipsam,
+                             commodi aut. Placeat recusandae sit repellat debitis fuga.</p>
+                        <p style="text-align-last: justify; width: 600px; border: 1px solid;">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Quae in nihil architecto qui debitis et esse molestias nesciunt iste nulla ea ipsam,
+                             commodi aut. Placeat recusandae sit repellat debitis fuga.</p>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <h2>CSS Տեքստի Ձևավորում</h2>
+                <p>Այս գլխում դուք կսովորեք հետևյալ հատկությունների մասին</p>
+                <ul>
+                    <li><uu>text-decoration-line</uu></li>
+                    <li><uu>text-decoration-color</uu></li>
+                    <li><uu>text-decoration-style</uu></li>
+                    <li><uu>text-decoration-thickness</uu></li>
+                    <li><uu>text-decoration</uu></li>
+                </ul>
+                <hr>
+                <p><uu>text-decoration-line</uu> հատկությունն օգտագործվում է տեքստին հարդարման տող ավելացնելու համար:</p>
+                <p><b>Հուշում:</b> Դուք կարող եք միավորել մեկից ավելի արժեքներ, օրինակ՝ գծի և ընդգծման՝ տեքստի վրա և տեքստի տակ տողերը ցուցադրելու համար:</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>.p1</span> {<br><f>text-decoration-line</f>: <a>overline</a>;<br>}
+                            <br>
+                            <span>.p2</span> {<br><f>text-decoration-line</f>: <a>line-through</a>;<br>}
+                            <br>
+                            <span>.p3</span> {<br><f>text-decoration-line</f>: <a>underline</a>;<br>}
+                            <br>
+                            <span>.p4</span> {<br><f>text-decoration-line</f>: <a>overline underline</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="text-decoration-line: overline;">Overline տեքստի ձևավորում</p>
+                        <p style="text-decoration-line: line-through;">Line-through տեքստի ձևավորում</p>
+                        <p style="text-decoration-line: underline;">Underline տեքստի ձևավորում</p>
+                        <p style="text-decoration-line: overline underline;">Overline և Underline տեքստի ձևավորում</p>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <p><uu>text-decoration-color</uu> հատկությունն օգտագործվում է հարդարման գծի գույնը սահմանելու համար:</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>.p1</span> {<br><f>text-decoration-line</f>: <a>overline</a>;<br>
+                                <f>text-decoration-color</f>: <a>red</a>;<br>}
+                            <br>
+                            <span>.p2</span> {<br><f>text-decoration-line</f>: <a>line-through</a>;<br>
+                                <f>text-decoration-color</f>: <a>blue</a>;<br>}
+                            <br>
+                            <span>.p3</span> {<br><f>text-decoration-line</f>: <a>underline</a>;<br>
+                                <f>text-decoration-color</f>: <a>orange</a>;<br>}
+                            <br>
+                            <span>.p4</span> {<br><f>text-decoration-line</f>: <a>overline underline</a>;<br>
+                                <f>text-decoration-color</f>: <a>green</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="text-decoration-line: overline; text-decoration-color: red">Overline(կարմիր) տեքստի ձևավորում</p>
+                        <p style="text-decoration-line: line-through; text-decoration-color: blue">Line-through(կապույտ) տեքստի ձևավորում</p>
+                        <p style="text-decoration-line: underline; text-decoration-color: orange">Underline(նարնջագույն) տեքստի ձևավորում</p>
+                        <p style="text-decoration-line: overline underline; text-decoration-color: green">Overline և Underline(կանաչ) տեքստի ձևավորում</p>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <p><uu>text-decoration-style</uu> հատկությունն օգտագործվում է հարդարման գծի ոճը սահմանելու համար:</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>.p1</span> {<br><f>text-decoration-line</f>: <a>underline</a>;<br>
+                                <f>text-decoration-style</f>: <a>solid</a>;<br>}
+                            <br>
+                            <span>.p2</span> {<br><f>text-decoration-line</f>: <a>underline</a>;<br>
+                                <f>text-decoration-color</f>: <a>blue</a>;<br>
+                                <f>text-decoration-style</f>: <a>double</a>;<br>}
+                            <br>
+                            <span>.p3</span> {<br><f>text-decoration-line</f>: <a>underline</a>;<br>
+                                <f>text-decoration-color</f>: <a>orange</a>;<br>
+                                <f>text-decoration-style</f>: <a>dotted</a>;<br>}
+                            <br>
+                            <span>.p4</span> {<br><f>text-decoration-line</f>: <a>underline</a>;<br>
+                                <f>text-decoration-color</f>: <a>red</a>;<br>
+                                <f>text-decoration-style</f>: <a>dashed</a>;<br>}
+                            <br>
+                            <span>.p5</span> {<br><f>text-decoration-line</f>: <a>underline</a>;<br>
+                                <f>text-decoration-color</f>: <a>green</a>;<br>
+                                <f>text-decoration-style</f>: <a>wavy</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="text-decoration-line: underline;">Ինչ որ մի տեքստ 1</p>
+                        <p style="text-decoration-line: underline; text-decoration-color: blue; text-decoration-style: double">Ինչ որ մի տեքստ 2</p>
+                        <p style="text-decoration-line: underline; text-decoration-color: orange; text-decoration-style: dotted">Ինչ որ մի տեքստ 3</p>
+                        <p style="text-decoration-line: underline; text-decoration-color: red; text-decoration-style: dashed">Ինչ որ մի տեքստ 4</p>
+                        <p style="text-decoration-line: underline; text-decoration-color: green; text-decoration-style: wavy">Ինչ որ մի տեքստ 5</p>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <p><uu>text-decoration-thickness</uu> հատկությունն օգտագործվում է հարդարման գծի հաստությունը սահմանելու համար:</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>.p1</span> {<br><f>text-decoration-line</f>: <a>overline</a>;<br>
+                                <f>text-decoration-thickness</f>: <a>auto</a>;<br>}
+                            <br>
+                            <span>.p2</span> {<br><f>text-decoration-line</f>: <a>line-through</a>;<br>
+                                <f>text-decoration-thickness</f>: <a>25%</a>;<br>}
+                            <br>
+                            <span>.p3</span> {<br><f>text-decoration-line</f>: <a>underline</a>;<br>
+                                <f>text-decoration-thickness</f>: <a>5px</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="text-decoration-line: overline; text-decoration-color: red; text-decoration-thickness: auto;">Ինչ որ մի տեքստ 1</p>
+                        <p style="text-decoration-line: line-through; text-decoration-color: blue; text-decoration-thickness: 25%;">Ինչ որ մի տեքստ 2</p>
+                        <p style="text-decoration-line: underline; text-decoration-color: orange; text-decoration-thickness: 5px;">Ինչ որ մի տեքստ 3</p>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <p><uu>text-decoration</uu> հատկությունը սղագրության հատկություն է հետևյալի համար.</p>
+                <ul>
+                    <li><uu>text-decoration-line</uu> (պարտադիր)</li>
+                    <li><uu>text-decoration-color</uu> (ըստ ցանկության)</li>
+                    <li><uu>text-decoration-style</uu> (ըստ ցանկության)</li>
+                    <li><uu>text-decoration-thickness</uu> (ըստ ցանկության)</li>
+                </ul>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>.p1</span> {<br><f>text-decoration</f>: <a>underline</a>;<br>}
+                            <br>
+                            <span>.p2</span> {<br><f>text-decoration</f>: <a>underline red</a>;<br>}
+                            <br>
+                            <span>.p3</span> {<br><f>text-decoration</f>: <a>underline red double</a>;<br>}
+                            <br>
+                            <span>.p4</span> {<br><f>text-decoration</f>: <a>underline red double 5px</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="text-decoration: overline;">Ինչ որ մի տեքստ 1</p>
+                        <p style="text-decoration: underline red;">Ինչ որ մի տեքստ 2</p>
+                        <p style="text-decoration: underline red double;">Ինչ որ մի տեքստ 3</p>
+                        <p style="text-decoration: underline red double 5px">Ինչ որ մի տեքստ 4</p>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <h2>Փոքր հուշում</h2>
+                <p>HTML-ի բոլոր հղումները լռելյայն(default) ընդգծված են: Երբեմն տեսնում եք, 
+                    որ հղումները ոճավորվում են առանց ընդգծման: <uu>decoration: none;</uu> 
+                    օգտագործվում է հղումներից ընդգծվածը հեռացնելու համար, այսպես.</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>a</span> {<br><f>text-decoration</f>: <a>none</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p>Հղում <a href="https://gormkrtchyann.github.io/thecodefather2.0/" style="text-decoration: none" target="_blank">The CodeFather</a></p>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <p><uu>text-transform</uu> հատկությունն օգտագործվում է տեքստում մեծատառ և փոքրատառ նշելու համար:</p>
+                <p>Այն կարող է օգտագործվել ամեն ինչ մեծ կամ փոքրատառերի վերածելու կամ յուրաքանչյուր բառի առաջին տառը մեծատառերի վերածելու համար</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>.p1</span> {<br><f>text-transform</f>: <a>uppercase</a>;<br>}
+                            <br>
+                            <span>.p2</span> {<br><f>text-transform</f>: <a>lowercase</a>;<br>}
+                            <br>
+                            <span>.p3</span> {<br><f>text-transform</f>: <a>capitalize</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="text-transform: uppercase;">Ինչ որ մի տեքստ 1</p>
+                        <p style="text-transform: lowercase;">Ինչ որ մի տեքստ 2</p>
+                        <p style="text-transform: capitalize;">Ինչ որ մի տեքստ 3</p>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <p>Այս գլխում դուք կսովորեք հետևյալ հատկությունների մասին</p>
+                <ul>
+                    <li><uu>text-indent</uu></li>
+                    <li><uu>letter-spacing</uu></li>
+                    <li><uu>line-height</uu></li>
+                    <li><uu>word-spacing</uu></li>
+                    <li><uu>white-space</uu></li>
+                </ul>
+                <p><uu>text-indent</uu> հատկությունը օգտագործվում է տեքստի առաջին տողի խորքությունը նշելու համար.</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>.p1</span> {<br><f>text-indent</f>: <a>50px</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="text-indent: 50px; width: 720px; border: 1px solid;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Molestiae, est dignissimos reiciendis, quasi minus assumenda laudantium repellat,
+                             repudiandae ullam culpa labore molestias dicta facere eaque aperiam harum alias quis ea!</p>
+                    </div>
+                </div>
+                <br><hr>
+                <p><uu>letter-spacing</uu> հատկությունը օգտագործվում է տեքստի նիշերի միջև տարածությունը նշելու համար:</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>.p1</span> {<br><f>letter-spacing</f>: <a>5px</a>;<br>}
+                            <br>
+                            <span>.p2</span> {<br><f>letter-spacing</f>: <a>-2px</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="letter-spacing: 5px; width: 720px; border: 1px solid;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Molestiae, est dignissimos reiciendis, quasi minus assumenda laudantium repellat,
+                             repudiandae ullam culpa labore molestias dicta facere eaque aperiam harum alias quis ea!</p>
+                        <p style="letter-spacing: -2px; width: 720px; border: 1px solid;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Molestiae, est dignissimos reiciendis, quasi minus assumenda laudantium repellat,
+                             repudiandae ullam culpa labore molestias dicta facere eaque aperiam harum alias quis ea!</p>
+                    </div>
+                </div>
+                <br><hr>
+                <p><uu>line-height</uu> հատկությունը օգտագործվում է տողերի միջև տարածությունը նշելու համար.</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>.p1</span> {<br><f>line-height</f>: <a>7px</a>;<br>}
+                            <br>
+                            <span>.p2</span> {<br><f>line-height</f>: <a>2</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="line-height: 7px; width: 720px; border: 1px solid;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Molestiae, est dignissimos reiciendis, quasi minus assumenda laudantium repellat,
+                             repudiandae ullam culpa labore molestias dicta facere eaque aperiam harum alias quis ea!</p>
+                        <p style="line-height: 2; width: 720px; border: 1px solid;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Molestiae, est dignissimos reiciendis, quasi minus assumenda laudantium repellat,
+                             repudiandae ullam culpa labore molestias dicta facere eaque aperiam harum alias quis ea!</p>
+                    </div>
+                </div>
+                <br><hr>
+                <p><uu>word-spacing</uu> հատկությունը օգտագործվում է տեքստում բառերի միջև տարածությունը նշելու համար:</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>.p1</span> {<br><f>word-spacing</f>: <a>7px</a>;<br>}
+                            <br>
+                            <span>.p2</span> {<br><f>word-spacingt</f>: <a>17px</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="word-spacing: 7px; width: 720px; border: 1px solid;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Molestiae, est dignissimos reiciendis, quasi minus assumenda laudantium repellat,
+                             repudiandae ullam culpa labore molestias dicta facere eaque aperiam harum alias quis ea!</p>
+                        <p style="word-spacing: 17px; width: 720px; border: 1px solid;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Molestiae, est dignissimos reiciendis, quasi minus assumenda laudantium repellat,
+                             repudiandae ullam culpa labore molestias dicta facere eaque aperiam harum alias quis ea!</p>
+                    </div>
+                </div>
+                <br><hr>
+                <p><uu>white-space</uu> հատկությունը սահմանում է, թե ինչպես է մշակվում տարրի ներսում սպիտակ տարածությունը:</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>.p1</span> {<br><f>white-space</f>: <a>nowrap</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="white-space: nowrap; width: 720px; border: 1px solid;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Molestiae, est dignissimos reiciendis, quasi minus assumenda laudantium repellat,
+                             repudiandae ullam culpa labore molestias dicta facere eaque aperiam harum alias quis ea!</p>
+                        <p style="width: 720px; border: 1px solid;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Molestiae, est dignissimos reiciendis, quasi minus assumenda laudantium repellat,
+                             repudiandae ullam culpa labore molestias dicta facere eaque aperiam harum alias quis ea!</p>
+                    </div>
+                </div>
+                <br><hr>
+                <p><uu>text-shadow</uu> հատկությունը ստվեր է ավելացնում տեքստին:</p>
+                <p>Իր ամենապարզ օգտագործման դեպքում դուք նշում եք միայն հորիզոնական ստվերը (2px) և ուղղահայաց ստվերը (2px):</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>.p1</span> {<br><f>text-shadow</f>: <a>2px 2px</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="text-shadow: 2px 2px;">Տեքստի ստվերային էֆեկտ</p>
+                    </div>
+                </div>
+                <br>
+                <p>Հաջորդը ստվերին ավելացրեք գույն (կարմիր).</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>.p1</span> {<br><f>text-shadow</f>: <a>2px 2px red</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="text-shadow: 2px 2px red;">Տեքստի ստվերային էֆեկտ</p>
+                    </div>
+                </div>
+                <br>
+                <p>Այնուհետև ստվերին ավելացրեք մշուշման էֆեկտ (5px).</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>.p1</span> {<br><f>text-shadow</f>: <a>2px 2px red 5px</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="text-shadow: 2px 2px red 5px;">Տեքստի ստվերային էֆեկտ</p>
+                    </div>
+                </div>
+                <br>
+                <h2>Տեքստի ստվերների ավելի շատ օրինակներ</h2>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>.p1</span> {<br><f>text-shadow</f>: <a>0 0 3px #ff0000</a>;<br>
+                                <f>color</f>: <a>white</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="text-shadow: 0 0 3px #ff0000; color: white;">Տեքստի ստվերային էֆեկտ</p>
+                    </div>
+                </div>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>.p1</span> {<br><f>text-shadow</f>: <a>0 0 3px #ff0000, 0 0 5px #0000ff</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff; color: white;">Տեքստի ստվերային էֆեկտ</p>
+                    </div>
+                </div>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>.p1</span> {<br><f>text-shadow</f>: <a>1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue</a>;<br>
+                                <f>color</f>: <a>white</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; color: white;">Տեքստի ստվերային էֆեկտ</p>
+                    </div>
+                </div>
             </section>
         </div>
     </div>

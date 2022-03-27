@@ -20,6 +20,10 @@ uu {
   padding: 1px 5px;
 }
 
+h2 {
+  text-transform: capitalize;
+}
+
 .body {
   width: 100%;
   overflow: hidden;
