@@ -45,7 +45,7 @@
                 <li><a class="links" href="#p8">CSS Padding</a></li>
                 <li><a class="links" href="#p9">CSS Height / Width</a></li>
                 <li><a class="links" href="#p10">CSS Box մոդել</a></li>
-                <li><a class="links" href="#p11">HTML Ֆորմ-ի Տարրերը</a></li>
+                <li><a class="links" href="#p11">CSS Outline</a></li>
             </ul>
         </div>
 
@@ -1494,6 +1494,224 @@
                     <li><b>Border</b> - եզրագիծ, որը շրջանցում է padding-ը և բովանդակությունը</li>
                     <li><b>Margin</b> - Մաքրում է սահմանից դուրս գտնվող տարածքը:</li>
                 </ul>
+            </section>
+            <br><hr><br>
+            <section id="p11">
+                <h1>CSS Outline(ուրվագիծ)</h1>
+                <hr>
+                <p>Ուրվագիծը տարրի սահմանից դուրս գծված գիծ է:</p>
+                <hr>
+                <p style="border: 2px solid #000; outline: 10px solid dodgerblue; padding: 10px; box-sizing: border-box;">Այս տարրը ունի սև եզրագիծ և կանաչ ուրվագիծ՝ 10px լայնությամբ:</p>
+                <hr>
+                <p>Ուրվագիծը գիծ է, որը գծվում է տարրերի շուրջ՝ սահմաններից ԴՈՒՐՍ, որպեսզի տարրը «առանձնանա»։</p>
+                <div style="width: 730px; height: 250px; background-image: url(assets/images/outline.jpg); background-position: center;
+                background-repeat: no-repeat; background-size: cover;"></div>
+                <br>
+                <p>CSS-ն ունի հետևյալ ուրվագծային հատկությունները</p>
+                <ul>
+                    <li><uu>outline-style</uu></li>
+                    <li><uu>outline-color</uu></li>
+                    <li><uu>outline-width</uu></li>
+                    <li><uu>outline-offset</uu></li>
+                    <li><uu>outline</uu></li>
+                </ul>
+                <hr>
+                <h2>CSS Outline ոճ</h2>
+                <p><uu>outline-style</uu> հատկությունը սահմանում է ուրվագծի ոճը և կարող է ունենալ հետևյալ արժեքներից մեկը.</p>
+                <ul>
+                    <li><uu>dotted</uu> - Սահմանում է կետավոր ուրվագիծ</li>
+                    <li><uu>dashed</uu> - Սահմանում է կտրված ուրվագիծ</li>
+                    <li><uu>solid</uu> - Սահմանում է սովորական ուրվագիծ</li>
+                    <li><uu>double</uu> - Սահմանում է կրկնակի ուրվագիծ</li>
+                    <li><uu>groove</uu> - Սահմանում է 3D ակոսավոր ուրվագիծ: Էֆեկտը կախված է ուրվագծի գույնի արժեքից</li>
+                    <li><uu>ridge</uu> - Սահմանում է 3D շողքային ուրվագիծ: Էֆեկտը կախված է ուրվագծի գույնի արժեքից</li>
+                    <li><uu>inset</uu> - Սահմանում է 3D ներդիր ուրվագիծ: Էֆեկտը կախված է ուրվագծի գույնի արժեքից</li>
+                    <li><uu>outset</uu> - Սահմանում է 3D սկզբնական ուրվագիծ: Էֆեկտը կախված է ուրվագծի գույնի արժեքից</li>
+                    <li><uu>none</uu> - ՈԻրվագիծ չի սահմանում</li>
+                    <li><uu>hidden</uu> - Սահմանում է թաքնված ուրվագիծ</li>
+                </ul>
+                <p>Հետևյալ օրինակը ցույց է տալիս <uu>outline-style</uu> տարբեր արժեքներ.</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>p.dotted</span> {<f style="margin: 0;">outline-style</f>: <a>dotted</a>;}
+                            <br>
+                            <span>p.dashed</span> {<f style="margin: 0;">outline-style</f>: <a>dashed</a>;}
+                            <br>
+                            <span>p.solid</span> {<f style="margin: 0;">outline-style</f>: <a>solid</a>;}
+                            <br>
+                            <span>p.double</span> {<f style="margin: 0;">outline-style</f>: <a>double</a>;}
+                            <br>
+                            <span>p.groove</span> {<f style="margin: 0;">outline-style</f>: <a>groove</a>;}
+                            <br>
+                            <span>p.ridge</span> {<f style="margin: 0;">outline-style</f>: <a>ridge</a>;}
+                            <br>
+                            <span>p.inset</span> {<f style="margin: 0;">outline-style</f>: <a>inset</a>;}
+                            <br>
+                            <span>p.outset</span> {<f style="margin: 0;">outline-style</f>: <a>outset</a>;}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="outline-style: dotted; outline-color: red;">Կետավոր եզրագիծ</p>
+                        <p style="outline-style: dashed; outline-color: red;">Կտրված եզրագիծ</p>
+                        <p style="outline-style: solid; outline-color: red;">Սովորական եզրագիծ</p>
+                        <p style="outline-style: double; outline-color: red;">Կրկնակի եզրագիծ</p>
+                        <p style="outline-style: groove; outline-color: red;">Մի ակոս եզրագիծ. Էֆեկտը կախված է եզրագծի գույնի արժեքից</p>
+                        <p style="outline-style: ridge; outline-color: red;">Շողքային եզրագիծ. Էֆեկտը կախված է եզրագծի գույնի արժեքից:</p>
+                        <p style="outline-style: inset; outline-color: red;">Ներդիր եզրագիծ: Էֆեկտը կախված է եզրագծի գույնի արժեքից:</p>
+                        <p style="outline-style: outset; outline-color: red;">Նախնական սահման. Էֆեկտը կախված է եզրագծի գույնի արժեքից:</p>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <h2>CSS Outline լայնությունը</h2>
+                <p><uu>outline-width</uu> հատկությունը սահմանում է ուրվագծի լայնությունը և կարող է ունենալ հետևյալ արժեքներից մեկը</p>
+                <ul>
+                    <li>thin (սովորաբար 1px)</li>
+                    <li>medium (սովորաբար 3px)</li>
+                    <li>thick (սովորաբար 5 px)</li>
+                    <li>Հատուկ չափս (px, pt, cm, em և այլն)</li>
+                </ul>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>p.one</span> {<br><f>outline-style</f>: <a>solid</a>;<br>
+                                <f>outline-color</f>: <a>red</a>;<br>
+                                <f>outline-width</f>: <a>thin</a>;<br>
+                                <f>border</f>: <a>1px solid</a>;<br>}
+                            <br>
+                            <span>p.two</span> {<br><f>outline-style</f>: <a>solid</a>;<br>
+                                <f>outline-color</f>: <a>red</a>;<br>
+                                <f>outline-width</f>: <a>medium</a>;<br>
+                                <f>border</f>: <a>1px solid</a>;<br>}
+                            <br>
+                            <span>p.tree</span> {<br><f>outline-style</f>: <a>solid</a>;<br>
+                                <f>outline-color</f>: <a>red </a>;<br>
+                                <f>outline-width</f>: <a>thick</a>;<br>
+                                <f>border</f>: <a>1px solid</a>;<br>}
+                            <br>
+                            <span>p.four</span> {<br><f>outline-style</f>: <a>solid</a>;<br>
+                                <f>outline-color</f>: <a>red</a>;<br>
+                                <f>outline-width</f>: <a>7px</a>;<br>
+                                <f>border</f>: <a>1px solid</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="outline-style: dotted; outline-width: thin; outline-color: red; border: 1px solid;">thin outline-width</p>
+                        <p style="outline-style: dotted; outline-width: medium; outline-color: red; border: 1px solid;">medium outline-width</p>
+                        <p style="outline-style: solid; outline-width: thick; outline-color: red; border: 1px solid;">thick outline-width</p>
+                        <p style="outline-style: solid; outline-width: 7px; outline-color: red; border: 1px solid;">7px outline-width</p>
+                    </div>
+                </div>
+                <hr>
+                <h2>CSS Outline գույնը</h2>
+                <p><uu>outline-color</uu> հատկությունն օգտագործվում է ուրվագիծերին գույնը սահմանելու համար:</p>
+                <p>Գույնը կարող է սահմանվել հետևյալով.</p>
+                <ul>
+                    <li>անուն - նշեք գույնի անուն, ինչպես "red"</li>
+                    <li>HEX - նշեք HEX արժեք, ինչպես "#ff0000"</li>
+                    <li>RGB - նշեք RGB արժեք, օրինակ՝ "rgb(255,0,0)":</li>
+                    <li>invert - կատարում է գունային ինվերսիա (որն ապահովում է ուրվագծի տեսանելիությունը՝ անկախ գունային ֆոնից)</li>
+                </ul>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>p.one</span> {<br><f>outline-style</f>: <a>solid</a>;<br>
+                                <f>outline-color</f>: <a>red</a>;<br>
+                                <f>border</f>: <a>1px solid</a>;<br>}
+                            <br>
+                            <span>p.two</span> {<br><f>outline-style</f>: <a>solid</a>;<br>
+                                <f>outline-color</f>: <a>#555</a>;<br>
+                                <f>border</f>: <a>1px solid</a>;<br>}
+                            <br>
+                            <span>p.tree</span> {<br><f>outline-style</f>: <a>solid</a>;<br>
+                                <f>outline-color</f>: <a>rgb(16, 0, 120)</a>;<br>
+                                <f>border</f>: <a>1px solid</a>;<br>}
+                            <br>
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="outline-style: solid; outline-color: red; border: 1px solid;">Կարմիր ուրվագիծ</p>
+                        <p style="outline-style: dotted; outline-color: #555; border: 1px solid;">Մոխրագույն ուրվագիծ</p>
+                        <p style="outline-style: dashed; outline-color: rgb(16, 0, 120); border: 1px solid;">Կապույտ ուրվագիծ/p>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <h2>CSS Outline - Սղագրություն</h2>
+                <p>Ինչպես տեսաք նախորդ էջում, կան բազմաթիվ հատկություններ, որոնք պետք է հաշվի առնել եզրագծերի հետ գործ ունենալիս:</p>
+                <p>Կոդը կրճատելու համար հնարավոր է նաև նշել բոլոր առանձին ուրվագծային հատկությունները մեկ սեփականության մեջ:</p>
+                <p><uu>outline</uu> հատկությունը սղագրության հատկություն է հետևյալ անհատական սահմանային հատկությունների համար.</p>
+                <ul>
+                    <li><uu>outline-width</uu></li>
+                    <li><uu>outline-style</uu>(պարտադիր)</li>
+                    <li><uu>outline-color</uu></li>
+                </ul>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>p</span> {<br><f>outline</f>: <a>5px solid red</a>;<br>
+                                <f>border</f>: <a>2px solid</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="outline: 5px solid red; border: 2px solid;">Ինչ որ մի տեքստ</p>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <h2>CSS Outline Offset</h2>
+                <p><uu>outline-offset</uu> հատկությունը ավելացնում է տարածություն ուրվագծի և տարրի եզրի/սահմանի միջև: Տարրի և դրա ուրվագծի միջև տարածությունը թափանցիկ է:</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>p</span> {<br><f>outline</f>: <a>5px solid red</a>;<br>
+                                <f>border</f>: <a>2px solid</a>;<br>
+                                <f>outline-offset</f>: <a>10px</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="outline: 5px solid red; border: 2px solid; outline-offset: 10px;">Ինչ որ մի տեքստ</p>
+                    </div>
+                </div>
+                <br><hr>
+                <h2>Բոլոր CSS ուրվագծային հատկությունները</h2>
+                <table style="border: 1px solid rgba(0, 0, 0, 0.438); text-align: left;">
+                    <tr>
+                        <th>Հատկություն</th>
+                        <th>Նկարագրություն</th>
+                    </tr>
+                    <tr style="background-color: #dddddd;">
+                        <td>outline</td>
+                        <td>Սղագրության հատկություն մեկ հայտարարության մեջ outline-width, outline-style և outline-color սահմանելու համար</td>
+                    </tr>
+                    <tr>
+                        <td>outline-color</td>
+                        <td>Սահմանում է ուրվագծի գույնը</td>
+                    </tr>
+                    <tr style="background-color: #dddddd;">
+                        <td>outline-offset</td>
+                        <td>Նշում է ուրվագծի և տարրի եզրի կամ եզրագծի միջև եղած տարածությունը</td>
+                    </tr>
+                    <tr>
+                        <td>outline-style</td>
+                        <td>Սահմանում է ուրվագծի ոճը</td>
+                    </tr>
+                    <tr style="background-color: #dddddd;">
+                        <td>outline-width</td>
+                        <td>Սահմանում է ուրվագծի լայնությունը</td>
+                    </tr>
+                </table>
             </section>
         </div>
     </div>
