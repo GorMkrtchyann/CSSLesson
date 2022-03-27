@@ -43,7 +43,7 @@
                 <li><a class="links" href="#p6">CSS Եզրագծեր(border)</a></li>
                 <li><a class="links" href="#p7">CSS Margin</a></li>
                 <li><a class="links" href="#p8">CSS Padding</a></li>
-                <li><a class="links" href="#p9">HTML Ցուցակներ</a></li>
+                <li><a class="links" href="#p9">CSS Height / Width</a></li>
                 <h2>HTML Ֆորմ</h2>
                 <li><a class="links" href="#p10">HTML Ֆորմ</a></li>
                 <li><a class="links" href="#p11">HTML Ֆորմ-ի Տարրերը</a></li>
@@ -1375,6 +1375,103 @@
                     <tr style="background-color: #dddddd;">
                         <td>padding-top</td>
                         <td>Սահմանում է տարրի վերին padding</td>
+                    </tr>
+                </table>
+            </section>
+            <br><hr><br>
+            <section id="p9">
+                <h1>CSS Height, Width</h1>
+                <p>CSS <uu>height</uu> և <uu>widht</uu> հատկությունները օգտագործվում են տարրի բարձրությունն ու լայնությունը սահմանելու համար:</p>
+                <p style="height: 50px; width: 100%; border: 1px solid dodgerblue; padding: 5px; box-sizing: border-box;">Այս տարրը ունի 50 պիքսել բարձրություն և 100% լայնություն:</p>
+                <hr>
+                <h2>CSS Կարգավորում height և widht</h2>
+                <p><uu>height</uu> և <uu>widht</uu> հատկությունները օգտագործվում են տարրի բարձրությունը և լայնությունը սահմանելու համար:</p>
+                <p>height և widht հատկությունները չեն ներառում padding, border(եզրագիծ) կամ margin(լուսանցք): Այն սահմանում է տարրի padding-ի, border-ի և margin-ի տարածքի բարձրությունը/լայնությունը:</p>
+                <hr>
+                <h2>CSS height և widht արժեքներ</h2>
+                <p><uu>height</uu> և <uu>widht</uu> հատկությունները կարող են ունենալ հետևյալ արժեքները.</p>
+                <ul>
+                    <li><uu>auto</uu> - Սա լռելյայն(default) է: Բրաուզերը հաշվարկում է բարձրությունը և լայնությունը</li>
+                    <li><uu>երկարություն</uu> - Սահմանում է բարձրությունը/լայնությունը px-ով, սմ-ով և այլն:</li>
+                    <li><uu>%</uu> - Սահմանում է բարձրությունը/լայնությունը պարունակող բլոկի տոկոսներով</li>
+                    <li><uu>initial</uu> - Բարձրությունը/լայնությունը սահմանում է իր լռելյայն արժեքին</li>
+                    <li><uu>inherit</uu> - Բարձրությունը/լայնությունը կժառանգվի իր մայր արժեքից</li>
+                </ul>
+                <hr>
+                <h2>CSS height և widht Օրինակներ</h2>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>.p1</span> {<br><f>width</f>: <a>50%</a>;<br>
+                                <f>height</f>: <a>200px</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="background-color: #417dff; width: 50%; height: 200px; color: #fff;">Այս տարրը ունի 200 պիքսել բարձրություն և 50% լայնություն</p>
+                    </div>
+                </div>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>.p1</span> {<br><f>width</f>: <a>500px</a>;<br>
+                                <f>height</f>: <a>200px</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="background-color: #417dff; width: 500px; height: 200px; color: #fff;">Այս տարրը ունի 200 պիքսել բարձրություն և 500 պիքսել լայնություն:</p>
+                    </div>
+                </div>
+                <hr>
+                <h2>Սահմանել max-widht</h2>
+                <p><uu>max-widht</uu> հատկությունն օգտագործվում է տարրի առավելագույն լայնությունը սահմանելու համար:</p>
+                <p><uu>max-widht</uu> կարող է սահմանվել երկարության արժեքներով, օրինակ՝ px, սմ և այլն, կամ պարունակող բլոկի տոկոսներով (%), կամ սահմանել ոչ մեկը (սա լռելյայն է: Նշանակում է, որ չկա առավելագույն լայնություն):</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>.p1</span> {<br><f>max-width</f>: <a>500px</a>;<br>
+                                <f>height</f>: <a>100px</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="background-color: #417dff; max-width: 500px; height: 200px; color: #fff;">Այս տարրը ունի 100 պիքսել բարձրություն և 500 պիքսել առավելագույն լայնություն:</p>
+                    </div>
+                </div>
+                <br><hr>
+                <h2>CSS-ի չափման բոլոր հատկությունները</h2>
+                <table style="border: 1px solid rgba(0, 0, 0, 0.438); text-align: left;">
+                    <tr>
+                        <th>Հատկություն</th>
+                        <th>Նկարագրություն</th>
+                    </tr>
+                    <tr style="background-color: #dddddd;">
+                        <td>height</td>
+                        <td>Սահմանում է տարրի բարձրությունը</td>
+                    </tr>
+                    <tr>
+                        <td>max-height</td>
+                        <td>Սահմանում է տարրի առավելագույն բարձրությունը</td>
+                    </tr>
+                    <tr style="background-color: #dddddd;">
+                        <td>max-width</td>
+                        <td>Սահմանում է տարրի առավելագույն լայնությունը</td>
+                    </tr>
+                    <tr>
+                        <td>min-height</td>
+                        <td>Սահմանում է տարրի նվազագույն բարձրությունը</td>
+                    </tr>
+                    <tr style="background-color: #dddddd;">
+                        <td>min-width</td>
+                        <td>Սահմանում է տարրի նվազագույն լայնությունը</td>
+                    </tr>
+                    <tr style="background-color: #dddddd;">
+                        <td>width</td>
+                        <td>Սահմանում է տարրի լայնությունը</td>
                     </tr>
                 </table>
             </section>
