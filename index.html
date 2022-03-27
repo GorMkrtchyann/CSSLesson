@@ -47,7 +47,17 @@
                 <li><a class="links" href="#p10">CSS Box մոդել</a></li>
                 <li><a class="links" href="#p11">CSS Outline</a></li>
                 <h2>CSS Տեքստ</h2>
-                <li><a class="links" href="#p12">CSS Տեքստ</a></li>
+                <li class="secMen">
+                    <a class="links" href="#p12">CSS Տեքստ*</a>
+                        <ul class="openSecP">
+                            <li><a class="openLinks" href="#p12.1">Տեքստի Գույն</a></li>
+                            <li><a class="openLinks" href="#p12.2">տեքստի հավասարեցում</a></li>
+                            <li><a class="openLinks" href="#p12.3">Տեքստի Ձևավորում</a></li>
+                            <li><a class="openLinks" href="#p12.4">տեքստի փոխակերպում</a></li>
+                            <li><a class="openLinks" href="#p12.5">Տեքստի տարածություն</a></li>
+                            <li><a class="openLinks" href="#p12.6">Տեքստի ստվեր</a></li>
+                        </ul>
+                </li>
                 <li><a class="links" href="#p13">CSS Outline</a></li>
                 <li><a class="links" href="#p14">CSS Outline</a></li>
                 <li><a class="links" href="#p15">CSS Outline</a></li>
@@ -1720,13 +1730,14 @@
                 </table>
             </section>
             <br><hr><br>
-            <section id="p12">
+            <section id="p12" class="secondmenu">
                 <h1 style="text-decoration: underline;">CSS Տեքստ</h1>
                 <hr>
                 <p>CSS-ն ունի տեքստի ձևաչափման բազմաթիվ հատկություններ:</p>
                 <hr>
                 <br>
-                <h2>CSS Տեքստի Գույն</h2>
+            <article id="p12.1">
+                <h2>Տեքստի Գույն</h2>
                 <p><uu>color</uu> հատկությունն օգտագործվում է տեքստի գույնը սահմանելու համար: Գույնը նշվում է հետևյալով.</p>
                 <ul>
                     <li>գույնի անուն, ինչպես "red"</li>
@@ -1751,9 +1762,11 @@
                         <p style="color: red;">Ինչ որ մի տեքստ</p>
                     </div>
                 </div>
+            </article>
                 <br>
                 <hr>
-                <h2>CSS տեքստի հավասարեցում</h2>
+            <article id="p12.2">
+                <h2>տեքստի հավասարեցում</h2>
                 <p>Այս գլխում դուք կսովորեք հետևյալ հատկությունների մասին.</p>
                 <ul>
                     <li><uu>text-align</uu></li>
@@ -1823,9 +1836,11 @@
                              commodi aut. Placeat recusandae sit repellat debitis fuga.</p>
                     </div>
                 </div>
+            </article>
                 <br>
                 <hr>
-                <h2>CSS Տեքստի Ձևավորում</h2>
+            <article id="p12.3">
+                <h2>Տեքստի Ձևավորում</h2>
                 <p>Այս գլխում դուք կսովորեք հետևյալ հատկությունների մասին</p>
                 <ul>
                     <li><uu>text-decoration-line</uu></li>
@@ -1994,8 +2009,11 @@
                         <p>Հղում <a href="https://gormkrtchyann.github.io/thecodefather2.0/" style="text-decoration: none" target="_blank">The CodeFather</a></p>
                     </div>
                 </div>
+            </article>
                 <br>
                 <hr>
+            <article id="p12.4">
+                <h2>տեքստի փոխակերպում</h2>
                 <p><uu>text-transform</uu> հատկությունն օգտագործվում է տեքստում մեծատառ և փոքրատառ նշելու համար:</p>
                 <p>Այն կարող է օգտագործվել ամեն ինչ մեծ կամ փոքրատառերի վերածելու կամ յուրաքանչյուր բառի առաջին տառը մեծատառերի վերածելու համար</p>
                 <div class="html-back">
@@ -2016,8 +2034,11 @@
                         <p style="text-transform: capitalize;">Ինչ որ մի տեքստ 3</p>
                     </div>
                 </div>
+            </article>
                 <br>
                 <hr>
+            <article id="p12.5">
+                <h2>Տեքստի տարածություն</h2>
                 <p>Այս գլխում դուք կսովորեք հետևյալ հատկությունների մասին</p>
                 <ul>
                     <li><uu>text-indent</uu></li>
@@ -2123,7 +2144,10 @@
                              repudiandae ullam culpa labore molestias dicta facere eaque aperiam harum alias quis ea!</p>
                     </div>
                 </div>
+            </article>
                 <br><hr>
+            <article id="p12.6">
+                <h2>Տեքստի ստվեր</h2>
                 <p><uu>text-shadow</uu> հատկությունը ստվեր է ավելացնում տեքստին:</p>
                 <p>Իր ամենապարզ օգտագործման դեպքում դուք նշում եք միայն հորիզոնական ստվերը (2px) և ուղղահայաց ստվերը (2px):</p>
                 <div class="html-back">
@@ -2206,6 +2230,7 @@
                         <p style="text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; color: white;">Տեքստի ստվերային էֆեկտ</p>
                     </div>
                 </div>
+            </article>
             </section>
         </div>
     </div>

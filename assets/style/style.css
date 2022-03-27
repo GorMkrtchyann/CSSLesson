@@ -234,6 +234,46 @@ h2 {
   color: #fff;
 }
 
+.content .menu ul li .openSecP {
+  height: 0;
+  margin-top: -5px;
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.content .menu ul li .openSecP li {
+  width: 300px;
+  margin-left: -120px;
+  margin-bottom: 7px;
+}
+
+.content .menu ul li .openSecP li:first-child {
+  margin-top: 20px;
+}
+
+.content .menu ul li .openSecP li a {
+  padding: 6px 10px;
+  font-size: 12px;
+  border: 2px solid #5d38ff;
+  border-radius: 50px;
+  background: #fff;
+  color: #5d38ff;
+  text-transform: capitalize;
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+}
+
+.content .menu ul li .openSecP li .op-active {
+  background: #5d38ff;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.content .menu ul li .secMen-active {
+  height: 240px;
+}
+
 .content .menu .sticky {
   position: fixed;
   height: 100vh;
