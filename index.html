@@ -1165,7 +1165,7 @@
                 </table>
             </section>
             <br><hr><br>
-            <section id="p7">
+            <section id="p8">
                 <h1>CSS Padding</h1>
                 <hr>
                 <p>Padding-ը օգտագործվում է տարրի բովանդակության շուրջ տարածություն ստեղծելու համար՝ ցանկացած սահմանված եզրագծերի ներսում:</p>
@@ -1311,6 +1311,72 @@
                 </div>
                 <hr>
                 <h2>Padding և տարրի լայնություն</h2>
+                <p>CSS <uu>width</uu> հատկությունը սահմանում է տարրի բովանդակության տարածքի լայնությունը:</p>
+                <p>Այսպիսով, եթե տարրը ունի որոշակի լայնություն, ապա այդ տարրին ավելացված padding-ին կավելացվի տարրի ընդհանուր լայնությանը: Սա հաճախ անցանկալի արդյունք է:</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>.p1</span> {<br><f>width</f>: <a>300px</a>;<br>}
+                             <br>   -------------------2------------------ <br>
+                            <span>.p2</span> {<br><f>width</f>: <a>300px</a>;<br>
+                                <f>padding</f>: <a>50px</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="border: 1px solid tomato; width: 300px;">Ինչ որ մի տեքստ 1</p>
+                        <p style="padding: 50px; border: 1px solid dodgerblue; width: 300px;">Ինչ որ մի տեքստ 2</p>
+                    </div>
+                </div>
+                <p>Լայնությունը 300px-ում պահելու համար, անկախ padding-ի քանակից, կարող եք օգտագործել <uu>box-sizing</uu> հատկությունը: Նրա ժամանակ տարրը պահպանում է իր իրական լայնությունը. եթե ավելացնեք padding, հասանելի բովանդակության տարածքը կնվազի:</p>
+                <div class="html-back">
+                    <h3>ՕՐԻՆԱԿ</h3>
+                    <div class="code-doc">
+                        <p>
+                            <span>.p1</span> {<br><f>width</f>: <a>300px</a>;<br>
+                                <f>padding</f>: <a>50px</a>;<br>}
+                             <br>   -------------------2------------------ <br>
+                            <span>.p2</span> {<br><f>width</f>: <a>300px</a>;<br>
+                                <f>padding</f>: <a>50px</a>;<br>
+                                <f>box-sizing</f>: <a>border-box</a>;<br>}
+                        </p>
+                    </div>
+                    <h3>Արդյունք</h3>
+                    <div style="background-color: #fff; padding: 15px;">
+                        <p style="padding: 50px; border: 1px solid tomato; width: 300px;">Ինչ որ մի տեքստ 1</p>
+                        <p style="padding: 50px; border: 1px solid dodgerblue; width: 300px; box-sizing: border-box;">Ինչ որ մի տեքստ 2</p>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <h2>CSS Padding-ի բոլոր հատկությունները</h2>
+                <table style="border: 1px solid rgba(0, 0, 0, 0.438); text-align: left;">
+                    <tr>
+                        <th>Հատկություն</th>
+                        <th>Նկարագրություն</th>
+                    </tr>
+                    <tr style="background-color: #dddddd;">
+                        <td>padding</td>
+                        <td>Սղագրության հատկություն՝ բոլոր padding հատկությունները մեկ հայտարարագրում սահմանելու համար</td>
+                    </tr>
+                    <tr>
+                        <td>padding-bottom</td>
+                        <td>Սահմանում է տարրի ստորին padding</td>
+                    </tr>
+                    <tr style="background-color: #dddddd;">
+                        <td>padding-left</td>
+                        <td>Սահմանում է տարրի ձախ padding</td>
+                    </tr>
+                    <tr>
+                        <td>padding-right</td>
+                        <td>Սահմանում է տարրի աջ padding</td>
+                    </tr>
+                    <tr style="background-color: #dddddd;">
+                        <td>padding-top</td>
+                        <td>Սահմանում է տարրի վերին padding</td>
+                    </tr>
+                </table>
             </section>
         </div>
     </div>
