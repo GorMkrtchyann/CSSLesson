@@ -234,7 +234,7 @@ h2 {
   color: #fff;
 }
 
-.content .menu ul li .openSecP {
+.content .menu ul li .ul {
   height: 0;
   margin-top: -5px;
   overflow: hidden;
@@ -242,17 +242,17 @@ h2 {
   transition: 0.3s;
 }
 
-.content .menu ul li .openSecP li {
+.content .menu ul li .ul li {
   width: 300px;
   margin-left: -120px;
   margin-bottom: 7px;
 }
 
-.content .menu ul li .openSecP li:first-child {
+.content .menu ul li .ul li:first-child {
   margin-top: 20px;
 }
 
-.content .menu ul li .openSecP li a {
+.content .menu ul li .ul li a {
   padding: 6px 10px;
   font-size: 12px;
   border: 2px solid #5d38ff;
@@ -264,7 +264,7 @@ h2 {
           box-shadow: 0 0 0 0;
 }
 
-.content .menu ul li .openSecP li .op-active {
+.content .menu ul li .ul li .op-active {
   background: #5d38ff;
   color: #fff;
   margin-right: 10px;
@@ -500,6 +500,10 @@ h2 {
 
 .mobile-menu {
   display: none;
+}
+
+#fonts p {
+  font-family: "Times New Roman", Times, serif;
 }
 
 @media screen and (max-width: 1920px) {

@@ -49,8 +49,18 @@ window.addEventListener("scroll", function(){
     }
 });
 
+window.addEventListener("scroll", function(){
+    if (window.pageYOffset >= document.querySelector('#p13').offsetTop) {
+        document.querySelector('.openSecP13').classList.add('secMen-active');
+        document.querySelector('.openSecP').classList.remove('secMen-active');
+    }else{
+        document.querySelector('.openSecP13').classList.remove('secMen-active');
+    }
+});
+
+
 let openLinks = document.querySelectorAll(".openLinks");
-let art = document.querySelectorAll(".secondmenu > article");
+let art = document.querySelectorAll("section > article");
 
 function activeOpen(){
     let len = art.length;

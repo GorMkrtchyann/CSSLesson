@@ -49,8 +49,19 @@
                 <h2>CSS Տեքստ</h2>
                 <li class="secMen">
                     <a class="links" href="#p12">CSS Տեքստ*</a>
-                        <ul class="openSecP">
+                        <ul class="openSecP ul">
                             <li><a class="openLinks" href="#p12.1">Տեքստի Գույն</a></li>
+                            <li><a class="openLinks" href="#p12.2">տեքստի հավասարեցում</a></li>
+                            <li><a class="openLinks" href="#p12.3">Տեքստի Ձևավորում</a></li>
+                            <li><a class="openLinks" href="#p12.4">տեքստի փոխակերպում</a></li>
+                            <li><a class="openLinks" href="#p12.5">Տեքստի տարածություն</a></li>
+                            <li><a class="openLinks" href="#p12.6">Տեքստի ստվեր</a></li>
+                        </ul>
+                </li>
+                <li class="secMen">
+                    <a class="links" href="#p13">CSS Ֆոնտեր*</a>
+                        <ul class="openSecP13 ul">
+                            <li><a class="openLinks" href="#p13.1">Տեքստի Գույն</a></li>
                             <li><a class="openLinks" href="#p12.2">տեքստի հավասարեցում</a></li>
                             <li><a class="openLinks" href="#p12.3">Տեքստի Ձևավորում</a></li>
                             <li><a class="openLinks" href="#p12.4">տեքստի փոխակերպում</a></li>
@@ -2231,6 +2242,57 @@
                     </div>
                 </div>
             </article>
+            </section>
+            <br><hr><br>
+
+            <section id="p13">
+                <article id="p13.1">
+                    <h1>CSS Ֆոնտեր</h1>
+                    <hr>
+                    <p>Ձեր կայքի համար ճիշտ տառատեսակ ընտրելը կարևոր է!</p>
+                    <hr>
+                    <p>Ճիշտ տառատեսակի ընտրությունը մեծ ազդեցություն ունի այն բանի վրա, թե ինչպես են ընթերցողները զգում կայքը:</p>
+                    <p>Ճիշտ տառատեսակը կարող է ուժեղ ինքնություն ստեղծել ձեր ապրանքանիշի համար:</p>
+                    <p>Կարևոր է հեշտ ընթերցվող տառատեսակի օգտագործումը: Տառատեսակը արժեք է ավելացնում ձեր տեքստին: Կարևոր է նաև ընտրել տառատեսակի ճիշտ գույնը և տեքստի չափը:</p>
+                    <hr>
+                    <h2>Ընդհանուր տառատեսակների ընտանիքներ</h2>
+                    <p>CSS-ում կան հինգ ընդհանուր տառատեսակների ընտանիքներ.</p>
+                    <ol style="line-height: 23px;">
+                        <li><b>Serif</b> տառատեսակները յուրաքանչյուր տառի եզրերին ունեն փոքր հատված:</li>
+                        <li><b>Sans-serif</b> տառատեսակներն ունեն մաքուր գծեր (առանց փոքր հարվածների կցված): Նրանք ստեղծում են ժամանակակից և մինիմալիստական տեսք:</li>
+                        <li><b>Monospace</b> տառատեսակներ - այստեղ բոլոր տառերն ունեն նույն ֆիքսված լայնությունը: Նրանք ստեղծում են մեխանիկական տեսք:</li>
+                        <li><b>Cursive</b> տառատեսակներն ընդօրինակում են մարդու ձեռագիրը:</li>
+                        <li><b>Fantasy</b> տառատեսակները դեկորատիվ/խաղ տառատեսակներ են:</li>
+                    </ol>
+                    <p>Բոլոր տարբեր տառատեսակների անունները պատկանում են ընդհանուր տառատեսակների ընտանիքներից մեկին:</p>
+                    <hr>
+                    <h2>Տարբերությունը Serif-ի և Sans-serif տառատեսակների միջև</h2>
+                    <img src="assets/images/serif.jpg" alt="serif">
+                    <div class="note">
+                        <p><b>Նշում:</b> Համակարգիչների էկրաններին sans-serif տառատեսակները համարվում են ավելի հեշտ ընթերցվող, քան սերիֆ տառատեսակները:</p>
+                    </div>
+                    <hr>
+                    <h2>Որոշ տառատեսակների օրինակներ</h2>
+                    <img src="assets/images/font.png" alt="font">
+                    <hr>
+                    <h2>CSS font-family հատկություն</h2>
+                    <p>CSS-ում մենք օգտագործում ենք <uu>font-family</uu> հատկությունը՝ տեքստի տառատեսակը նշելու համար:</p>
+                    <div class="note">
+                        <p><b>Նշում:</b> Եթե տառատեսակի անվանումը մեկից ավելի բառ է, այն պետք է լինի չակերտների մեջ, օրինակ՝ "Times New Roman":</p>
+                    </div>
+                    <div class="html-back">
+                        <h3>ՕՐԻՆԱԿ</h3>
+                        <div class="code-doc">
+                            <p>
+                                <span>.p1</span> {<br><f>font-family</f>: <a>"Times New Roman", Times, serif</a>;<br>}
+                                <br>
+                                <span>.p2</span> {<br><f>font-family</f>: <a>Arial, Helvetica, sans-serif</a>;<br>}
+                                <br>
+                                <span>.p3</span> {<br><f>font-family</f>: <a>"Lucida Console", "Courier New", monospace</a>;<br>}
+                            </p>
+                        </div>
+                    </div>
+                </article>
             </section>
         </div>
     </div>
