@@ -62,11 +62,10 @@
                     <a class="links" href="#p13">CSS Ֆոնտեր*</a>
                         <ul class="openSecP13 ul">
                             <li><a class="openLinks" href="#p13.1">Տեքստի Գույն</a></li>
-                            <li><a class="openLinks" href="#p12.2">տեքստի հավասարեցում</a></li>
-                            <li><a class="openLinks" href="#p12.3">Տեքստի Ձևավորում</a></li>
-                            <li><a class="openLinks" href="#p12.4">տեքստի փոխակերպում</a></li>
-                            <li><a class="openLinks" href="#p12.5">Տեքստի տարածություն</a></li>
-                            <li><a class="openLinks" href="#p12.6">Տեքստի ստվեր</a></li>
+                            <li><a class="openLinks" href="#p13.2">վեբ անվտանգ տառատեսակներ</a></li>
+                            <li><a class="openLinks" href="#p13.3">տառատեսակի ոճը</a></li>
+                            <li><a class="openLinks" href="#p13.4">Տառատեսակի չափը</a></li>
+                            <li><a class="openLinks" href="#p13.5">font հատկություն</a></li>
                         </ul>
                 </li>
                 <li><a class="links" href="#p13">CSS Outline</a></li>
@@ -2290,6 +2289,363 @@
                                 <br>
                                 <span>.p3</span> {<br><f>font-family</f>: <a>"Lucida Console", "Courier New", monospace</a>;<br>}
                             </p>
+                        </div>
+                    </div>
+                </article>
+                <br>
+                <hr>
+                <article id="p13.2">
+                    <h2>վեբ անվտանգ տառատեսակներ</h2>
+                    <hr>
+                    <h2>Որոնք են վեբ անվտանգ տառատեսակները</h2>
+                    <p>Վեբ անվտանգ տառատեսակները տառատեսակներ են, որոնք համընդհանուր տեղադրվում են բոլոր բրաուզերներում և սարքերում:</p>
+                    <hr>
+                    <h2>fallback տառատեսակներ</h2>
+                    <p>Այնուամենայնիվ, չկան 100% լիովին անվտանգ վեբ տառատեսակներ: Միշտ հնարավորություն կա, որ տառատեսակը չի գտնվել կամ ճիշտ չի տեղադրվել:</p>
+                    <p>Հետևաբար, շատ կարևոր է միշտ օգտագործել fallback տառատեսակներ:</p>
+                    <p>Սա նշանակում է, որ դուք պետք է ավելացնեք նմանատիպ «backup տառատեսակների» ցանկ <uu>font-family</uu> սեփականության մեջ: Եթե առաջին տառատեսակը չի աշխատում, բրաուզերը կփորձի հաջորդը, իսկ հաջորդը և այլն: Ցանկը միշտ ավարտեք ընդհանուր տառատեսակի ընտանիքի անունով:</p>
+                    <div class="html-back">
+                        <h3>ՕՐԻՆԱԿ</h3>
+                        <div class="code-doc">
+                            <p>
+                                <span>p</span> {<br><f>font-family</f>: <a>Tahoma, Verdana, sans-serif</a>;<br>}
+                            </p>
+                        </div>
+                    </div>
+                    <br><hr>
+                    <h2>Լավագույն վեբ անվտանգ տառատեսակներ HTML-ի և CSS-ի համար</h2>
+                    <p>Հետևյալ ցանկը լավագույն վեբ անվտանգ տառատեսակներն են HTML-ի և CSS-ի համար</p>
+                    <ul>
+                        <li>Arial (sans-serif)</li>
+                        <li>Verdana (sans-serif)</li>
+                        <li>Helvetica (sans-serif)</li>
+                        <li>Tahoma (sans-serif)</li>
+                        <li>Trebuchet MS (sans-serif)</li>
+                        <li>Times New Roman (serif)</li>
+                        <li>Georgia (serif)</li>
+                        <li>Garamond (serif)</li>
+                        <li>Courier New (monospace)</li>
+                        <li>Brush Script MT (cursive)</li>
+                    </ul>
+                    <div class="note">
+                        <p><b>Նշում:</b> Ձեր կայքը հրապարակելուց առաջ միշտ ստուգեք, թե ինչպես են ձեր տառատեսակները հայտնվում տարբեր բրաուզերների և սարքերի վրա և միշտ օգտագործեք fallback տառատեսակներ:</p>
+                    </div>
+                    <hr>
+                    <h2>Arial (sans-serif)</h2>
+                    <p>Arial-ը ամենաշատ օգտագործվող տառատեսակն է ինչպես առցանց, այնպես էլ տպագիր լրատվամիջոցների համար: Arial-ը նաև Google Docs-ի լռելյայն տառատեսակն է:</p>
+                    <p>Arial-ը ամենաանվտանգ վեբ տառատեսակներից մեկն է և հասանելի է բոլոր հիմնական օպերացիոն համակարգերում:</p>
+                    <div class="html-back">
+                        <h3>ՕՐԻՆԱԿ</h3>
+                        <div class="code-doc">
+                            <p>
+                                <span>body</span> {<br><f>font-family</f>: <a>Arial, sans-serif</a>;<br>}
+                            </p>
+                        </div>
+                        <h3>Արդյունք</h3>
+                        <div style="background-color: #fff; padding: 15px;">
+                            <h3 style="font-family: Arial, sans-serif">Lorem ipsum dolor, sit amet</h3>
+                            <p style="font-family: Arial, sans-serif">Lorem ipsum dolor, sit amet</p>
+                            <p style="font-family: Arial, sans-serif">1234567890</p>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                    <h2>Verdana (sans-serif)</h2>
+                    <p>Verdana-ն շատ տարածված տառատեսակ է: Verdana-ն հեշտությամբ ընթեռնելի է նույնիսկ փոքր տառատեսակների համար:</p>
+                    <div class="html-back">
+                        <h3>ՕՐԻՆԱԿ</h3>
+                        <div class="code-doc">
+                            <p>
+                                <span>body</span> {<br><f>font-family</f>: <a>Verdana, sans-serif</a>;<br>}
+                            </p>
+                        </div>
+                        <h3>Արդյունք</h3>
+                        <div style="background-color: #fff; padding: 15px;">
+                            <h3 style="font-family: Verdana, sans-serif">Lorem ipsum dolor, sit amet</h3>
+                            <p style="font-family: Verdana, sans-serif">Lorem ipsum dolor, sit amet</p>
+                            <p style="font-family: Verdana, sans-serif">1234567890</p>
+                        </div>
+                    </div>
+                    <br><hr>
+                    <h2>Helvetica (sans-serif)</h2>
+                    <p>Helvetica տառատեսակը սիրված է դիզայներների կողմից։ Հարմար է բիզնեսի բազմաթիվ տեսակների համար։</p>
+                    <div class="html-back">
+                        <h3>ՕՐԻՆԱԿ</h3>
+                        <div class="code-doc">
+                            <p>
+                                <span>body</span> {<br><f>font-family</f>: <a>Helvetica, sans-serif</a>;<br>}
+                            </p>
+                        </div>
+                        <h3>Արդյունք</h3>
+                        <div style="background-color: #fff; padding: 15px;">
+                            <h3 style="font-family: Helvetica, sans-serif">Lorem ipsum dolor, sit amet</h3>
+                            <p style="font-family: Helvetica, sans-serif">Lorem ipsum dolor, sit amet</p>
+                            <p style="font-family: Helvetica, sans-serif">1234567890</p>
+                        </div>
+                    </div>
+                    <br><hr>
+                    <h2>Tahoma (sans-serif)</h2>
+                    <p>Tahoma տառատեսակը նիշերի միջև ավելի քիչ տարածություն ունի:</p>
+                    <div class="html-back">
+                        <h3>ՕՐԻՆԱԿ</h3>
+                        <div class="code-doc">
+                            <p>
+                                <span>body</span> {<br><f>font-family</f>: <a>Tahoma, sans-serif</a>;<br>}
+                            </p>
+                        </div>
+                        <h3>Արդյունք</h3>
+                        <div style="background-color: #fff; padding: 15px;">
+                            <h3 style="font-family: Tahoma, sans-serif">Lorem ipsum dolor, sit amet</h3>
+                            <p style="font-family: Tahoma, sans-serif">Lorem ipsum dolor, sit amet</p>
+                            <p style="font-family: Tahoma, sans-serif">1234567890</p>
+                        </div>
+                    </div>
+                    <br><hr>
+                    <h2>Times New Roman (serif)</h2>
+                    <p>Times New Roman-ը աշխարհի ամենաճանաչված տառատեսակներից մեկն է: Այն պրոֆեսիոնալ տեսք ունի և օգտագործվում է բազմաթիվ թերթերում և «լրատվական» կայքերում: Այն նաև Windows սարքերի և հավելվածների հիմնական տառատեսակն է:</p>
+                    <div class="html-back">
+                        <h3>ՕՐԻՆԱԿ</h3>
+                        <div class="code-doc">
+                            <p>
+                                <span>body</span> {<br><f>font-family</f>: <a>Times New Roman, serif</a>;<br>}
+                            </p>
+                        </div>
+                        <h3>Արդյունք</h3>
+                        <div style="background-color: #fff; padding: 15px;">
+                            <h3 style="font-family: Times New Roman, serif">Lorem ipsum dolor, sit amet</h3>
+                            <p style="font-family: Times New Roman, serif">Lorem ipsum dolor, sit amet</p>
+                            <p style="font-family: Times New Roman, serif">1234567890</p>
+                        </div>
+                    </div>
+                    <br><hr>
+                    <h2>Georgia (serif)</h2>
+                    <p>Georgia-ն էլեգանտ սերիֆային տառատեսակ է: Այն շատ ընթեռնելի է տարբեր տառաչափերի դեպքում, ուստի այն լավ թեկնածու է բջջային դիզայնի համար:</p>
+                    <div class="html-back">
+                        <h3>ՕՐԻՆԱԿ</h3>
+                        <div class="code-doc">
+                            <p>
+                                <span>body</span> {<br><f>font-family</f>: <a>Georgia, serif</a>;<br>}
+                            </p>
+                        </div>
+                        <h3>Արդյունք</h3>
+                        <div style="background-color: #fff; padding: 15px;">
+                            <h3 style="font-family: Georgia, serif">Lorem ipsum dolor, sit amet</h3>
+                            <p style="font-family: Georgia, serif">Lorem ipsum dolor, sit amet</p>
+                            <p style="font-family: Georgia, serif">1234567890</p>
+                        </div>
+                    </div>
+                    <br><hr>
+                    <h2>Courier New (monospace)</h2>
+                    <p>Courier New-ը ամենալայն օգտագործվող monospace serif տառատեսակն է: Courier New-ը հաճախ օգտագործվում է կոդավորման էկրանների հետ, և 
+                        էլփոստի շատ մատակարարներ այն օգտագործում են որպես իրենց լռելյայն տառատեսակ: Courier New-ը նաև ստանդարտ տառատեսակ է ֆիլմերի սցենարների համար:</p>
+                    <div class="html-back">
+                        <h3>ՕՐԻՆԱԿ</h3>
+                        <div class="code-doc">
+                            <p>
+                                <span>body</span> {<br><f>font-family</f>: <a>Courier New, monospace</a>;<br>}
+                            </p>
+                        </div>
+                        <h3>Արդյունք</h3>
+                        <div style="background-color: #fff; padding: 15px;">
+                            <h3 style="font-family: Courier New, monospace">Lorem ipsum dolor, sit amet</h3>
+                            <p style="font-family: Courier New, monospace">Lorem ipsum dolor, sit amet</p>
+                            <p style="font-family: Courier New, monospace">1234567890</p>
+                        </div>
+                    </div>
+                    <br><hr>
+                    <h2>Brush Script MT (cursive)</h2>
+                    <p>Brush Script MT տառատեսակը նախագծված էր ձեռագիրը ընդօրինակելու համար: Այն էլեգանտ է և բարդ, բայց դժվար է կարդալ:</p>
+                    <div class="html-back">
+                        <h3>ՕՐԻՆԱԿ</h3>
+                        <div class="code-doc">
+                            <p>
+                                <span>body</span> {<br><f>font-family</f>: <a>Brush Script MT, cursive</a>;<br>}
+                            </p>
+                        </div>
+                        <h3>Արդյունք</h3>
+                        <div style="background-color: #fff; padding: 15px;">
+                            <h3 style="font-family: Brush Script MT, cursive">Lorem ipsum dolor, sit amet</h3>
+                            <p style="font-family: Brush Script MT, cursive">Lorem ipsum dolor, sit amet</p>
+                            <p style="font-family: Brush Script MT, cursive">1234567890</p>
+                        </div>
+                    </div>
+                    <br><hr>
+                </article>
+                <article id="p13.3">
+                    <h2>CSS տառատեսակի ոճը</h2>
+                    <p><uu>font-style</uu> հատկությունը հիմնականում օգտագործվում է շեղ տեքստը նշելու համար:</p>
+                    <p>Այս հատկությունն ունի երեք արժեք</p>
+                    <ul>
+                        <li>normal - Տեքստը ցուցադրվում է նորմալ</li>
+                        <li>italic - Տեքստը ցուցադրվում է շեղ տառերով</li>
+                        <li>oblique - Տեքստը «թեք» է (oblique շատ նման է italic-ին, բայց ավելի քիչ աջակցվող)</li>
+                    </ul>
+                    <div class="html-back">
+                        <h3>ՕՐԻՆԱԿ</h3>
+                        <div class="code-doc">
+                            <p>
+                                <span>.p1</span> {<br><f>font-style</f>: <a>normal</a>;<br>}
+                                <br><br>
+                                <span>.p2</span> {<br><f>font-style</f>: <a>italic</a>;<br>}
+                                <br><br>
+                                <span>.p3</span> {<br><f>font-style</f>: <a>oblique</a>;<br>}
+                            </p>
+                        </div>
+                        <h3>Արդյունք</h3>
+                        <div style="background-color: #fff; padding: 15px;">
+                            <p style="font-style: normal">Lorem ipsum dolor, sit amet</p>
+                            <p style="font-style: italic">Lorem ipsum dolor, sit amet</p>
+                            <p style="font-style: oblique">Lorem ipsum dolor, sit amet</p>
+                        </div>
+                    </div>
+                    <br><hr>
+                    <p><uu>font-weight</uu> հատկությունը սահմանում է տառատեսակի հաստությունը</p>
+                    <div class="html-back">
+                        <h3>ՕՐԻՆԱԿ</h3>
+                        <div class="code-doc">
+                            <p>
+                                <span>.p1</span> {<br><f>font-weight</f>: <a>normal</a>;<br>}
+                                <br><br>
+                                <span>.p2</span> {<br><f>font-weight</f>: <a>bold</a>;<br>}
+                            </p>
+                        </div>
+                        <h3>Արդյունք</h3>
+                        <div style="background-color: #fff; padding: 15px;">
+                            <p style="font-weight: normal">Lorem ipsum dolor, sit amet</p>
+                            <p style="font-weight: bold">Lorem ipsum dolor, sit amet</p>
+                        </div>
+                    </div>
+                    <br><hr>
+                    <p><uu>font-variant</uu> հատկությունը սահմանում է, թե արդյոք տեքստը պետք է ցուցադրվի small-caps-ով, թե ոչ:</p>
+                    <p>Փոքրատառ տառատեսակում բոլոր փոքրատառերը վերածվում են մեծատառերի: Այնուամենայնիվ, փոխարկված մեծատառերը հայտնվում են ավելի փոքր տառաչափով, քան տեքստի սկզբնական մեծատառերը:</p>
+                    <div class="html-back">
+                        <h3>ՕՐԻՆԱԿ</h3>
+                        <div class="code-doc">
+                            <p>
+                                <span>.p1</span> {<br><f>font-variant</f>: <a>normal</a>;<br>}
+                                <br><br>
+                                <span>.p2</span> {<br><f>font-variant</f>: <a>small-caps</a>;<br>}
+                            </p>
+                        </div>
+                        <h3>Արդյունք</h3>
+                        <div style="background-color: #fff; padding: 15px;">
+                            <p style="font-variant: normal">Lorem ipsum dolor, sit amet</p>
+                            <p style="font-variant: small-caps">Lorem ipsum dolor, sit amet</p>
+                        </div>
+                    </div>
+                </article>
+                <br><hr>
+                <article id="p13.4">
+                    <h2>Տառատեսակի չափը</h2>
+                    <p><uu>font-size</uu> հատկությունը սահմանում է տեքստի չափը:</p>
+                    <p>Վեբ դիզայնի մեջ կարևոր է տեքստի չափը կառավարելու ունակությունը: Այնուամենայնիվ, դուք չպետք է օգտագործեք տառատեսակի չափի ճշգրտումներ՝ պարբերությունները վերնագրերի կամ վերնագրերը պարբերությունների տեսք տալու համար:</p>
+                    <p>Միշտ օգտագործեք համապատասխան HTML թեգերը, օրինակ՝ <span><</span>h1> - <span><</span>h6> վերնագրերի համար և <span><</span>p> պարբերությունների համար:</p>
+                    <p><uu>font-size</uu>-ի արժեքը կարող է լինել բացարձակ կամ հարաբերական չափ:</p>
+                    <br>
+                    <p>Բացարձակ չափ</p>
+                    <ul>
+                        <li>Տեքստը սահմանում է որոշակի չափի</li>
+                        <li>Թույլ չի տալիս օգտվողին փոխել տեքստի չափը բոլոր բրաուզերներում (վատ՝ մատչելիության պատճառով)</li>
+                        <li>Բացարձակ չափը օգտակար է, երբ ելքի ֆիզիկական չափը հայտնի է</li>
+                    </ul>
+                    <p>Հարաբերական չափս</p>
+                    <ul>
+                        <li>Սահմանում է չափը հարակից տարրերի համեմատ</li>
+                        <li>Թույլ է տալիս օգտվողին փոխել տեքստի չափը բրաուզերներում</li>
+                    </ul>
+                    <br>
+                    <hr>
+                    <h2>Սահմանեք տառաչափը պիքսելներով</h2>
+                    <p>Տեքստի չափը պիքսելներով սահմանելը հնարավորություն է տալիս լիովին վերահսկել տեքստի չափը.</p>
+                    <div class="html-back">
+                        <h3>ՕՐԻՆԱԿ</h3>
+                        <div class="code-doc">
+                            <p>
+                                <span>.p1</span> {<br><f>font-size</f>: <a>40px</a>;<br>}
+                                <br><br>
+                                <span>.p2</span> {<br><f>font-size</f>: <a>25px</a>;<br>}
+                                <br><br>
+                                <span>.p3</span> {<br><f>font-size</f>: <a>10px</a>;<br>}
+                            </p>
+                        </div>
+                        <h3>Արդյունք</h3>
+                        <div style="background-color: #fff; padding: 15px;">
+                            <p style="font-size: 40px">Lorem ipsum dolor, sit amet</p>
+                            <p style="font-size: 25px">Lorem ipsum dolor, sit amet</p>
+                            <p style="font-size: 10px">Lorem ipsum dolor, sit amet</p>
+                        </div>
+                    </div>
+                    <br><hr>
+                    <h2>Սահմանեք տառատեսակի չափը Em-ի հետ</h2>
+                    <p>1em-ը հավասար է ընթացիկ տառաչափին: Բրաուզերներում տեքստի կանխադրված չափը 16px է: Այսպիսով, 1em-ի լռելյայն չափը 16px է:</p>
+                    <p>Չափը կարելի է հաշվարկել պիքսելներից մինչև em՝ օգտագործելով այս բանաձևը՝ պիքսել/16=em</p>
+                    <div class="html-back">
+                        <h3>ՕՐԻՆԱԿ</h3>
+                        <div class="code-doc">
+                            <p>
+                                <span>.p1</span> {<br><f>font-size</f>: <a>2.5em</a>; /* 40px/16=2.5em */<br>}
+                                <br><br>
+                                <span>.p2</span> {<br><f>font-size</f>: <a>1.5625em</a>; /* 25px/16=1.5625em */<br>}
+                                <br><br>
+                                <span>.p3</span> {<br><f>font-size</f>: <a>0.625em</a>; /* 10px/16=0.625em */<br>}
+                            </p>
+                        </div>
+                        <h3>Արդյունք</h3>
+                        <div style="background-color: #fff; padding: 15px;">
+                            <p style="font-size: 40px">Lorem ipsum dolor, sit amet</p>
+                            <p style="font-size: 25px">Lorem ipsum dolor, sit amet</p>
+                            <p style="font-size: 10px">Lorem ipsum dolor, sit amet</p>
+                        </div>
+                    </div>
+                    <br>
+                    <p>Վերևի օրինակում em-ում տեքստի չափը նույնն է, ինչ նախորդ օրինակը պիքսելներով: Այնուամենայնիվ, em չափի դեպքում հնարավոր է կարգավորել տեքստի չափը բոլոր բրաուզերներում:</p>
+                    <p>Ցավոք, Internet Explorer-ի հին տարբերակների հետ կապված դեռ խնդիր կա: Տեքստը դառնում է ավելի մեծ, քան պետք է, երբ մեծանում է, և ավելի փոքր, քան պետք է, երբ փոքրանում է:</p>
+                    <hr>
+                    <h2>Responsive Font-Size</h2>
+                    <p>Տեքստի չափը կարող է սահմանվել vw միավորով, ինչը նշանակում է «տեսադաշտի լայնությունը»:</p>
+                    <p>Այդ կերպ տեքստի չափը կհամապատասխանի բրաուզերի պատուհանի չափին.</p>
+                    <div class="html-back">
+                        <h3>ՕՐԻՆԱԿ</h3>
+                        <div class="code-doc">
+                            <p>
+                                <span>.p1</span> {<br><f>font-size</f>: <a>10vw</a>;/<br>}
+                                <br><br>
+                                <span>.p2</span> {<br><f>font-size</f>: <a>20px</a>;<br>}
+                            </p>
+                        </div>
+                        <h3>Արդյունք</h3>
+                        <div style="background-color: #fff; padding: 15px;">
+                            <p style="font-size: 10vw">Hello World</p>
+                            <p style="font-size: 20px">Չափափոխեք բրաուզերի պատուհանը՝ տեսնելու, թե ինչպես է տառատեսակի չափը մասշտաբվում:</p>
+                        </div>
+                    </div>
+                </article>
+                <br><hr>
+                <article id="p13.5">
+                    <h2>Font հատկությունը</h2>
+                    <p>Կոդը կրճատելու համար հնարավոր է նաև նշել տառատեսակի բոլոր հատկությունները մեկ հատկության մեջ:</p>
+                    <p><uu>font</uu> հատկությունը սղագրության հատկություն է հետևյալի համար.</p>
+                    <ul>
+                        <li><uu>font-style</uu></li>
+                        <li><uu>font-variant</uu></li>
+                        <li><uu>font-weight</uu></li>
+                        <li><uu>font-size/line-height</uu></li>
+                        <li><uu>font-family</uu></li>
+                    </ul>
+                    <p>Նշում. <uu>font-size</uu> և <uu>font-family</uu> արժեքները պարտադիր են: Եթե մյուս արժեքներից մեկը բացակայում է, ապա օգտագործվում է դրանց լռելյայն արժեքը:</p>
+                    <div class="html-back">
+                        <h3>ՕՐԻՆԱԿ</h3>
+                        <div class="code-doc">
+                            <p>
+                                <span>.p1</span> {<br><f>font</f>: <a>20px Arial, sans-serif</a>;/<br>}
+                                <br><br>
+                                <span>.p2</span> {<br><f>font</f>: <a>italic small-caps bold 12px/30px Georgia, serif</a>;<br>}
+                            </p>
+                        </div>
+                        <h3>Արդյունք</h3>
+                        <div style="background-color: #fff; padding: 15px;">
+                            <p style="font: 20px Arial, sans-serif">Hello World</p>
+                            <p style="font: italic small-caps bold 12px/30px Georgia, serif">Lorem, ipsum dolor sit amet</p>
                         </div>
                     </div>
                 </article>
